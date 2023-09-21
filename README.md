@@ -13,6 +13,10 @@ The repository consists of CAR source code and supplementary material, including
 
 ```
 CAR
+├── CAR-Game	# source code of CAR game client
+├── CAR-Mobile	# source code of CAR mobile client
+├── CAR-Server	# source code of CAR server
+├── CAR-VR-WS	# source code of CAR VR and workstation client
 ├── assets	# assets of documents
 ├── data	# paper supplementary material
 │   ├── ...
