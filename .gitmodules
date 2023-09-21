@@ -8,6 +8,6 @@
 	path = CAR-Server
 	url = git@github.com:Hi5App/BrainTellServer.git
 [submodule "CAR-VR-WS"]
-	path = CAR-VR-WS
+	path = CAR-WS-VR
 	url = git@github.com:Vaa3D/v3d_external.git
 	branch = collaborate_mode
