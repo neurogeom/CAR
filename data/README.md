@@ -2,45 +2,65 @@
 
 ```
 data
-├── 20_mouse_neuron_boutons_data    # 20 boutons detected using CAR
-│   └── 20_bouton_obj              # OBJ files for boutons, which contains information about the geometry of the 3D objects
-│       ├── r_0_g_156_b_117_GU2_3.obj
+├── human
+│   └── 80_human_neurons	# 80 human neuron morphology reconstructed using CAR
+│       ├── 00011_P001_MFG.swc	# {neuron_id}_{patient_id}_{brain_region}.swc
 │       ├── ...
-│       └── r_97_g_231_b_183_COApm.obj
-├── 20_mouse_neurons_data   # 20 mouse neuron morphology reconstructed using CAR
-│   └── CCFv3_25um
-│       ├── 17302_00002_stps.swc
-│       ├── ...
-│       └── 18869_5705_x4706_y6107_stps.swc
-├── 80_human_neurons_data   # 80 human neuron morphology reconstructed using CAR
-│   ├── 00011_P001_MFG.swc  # human neuron ID
-│   ├── ...
-│   └── 02322_P021_FL.swc
-├── soma_morphometry_Hi5.xlsx	# 156,190 identified somas
+│       └── 02322_P021_FL.swc
+├── mouse
+│   ├── 156k_soma
+│   │   └── soma_morphometry_Hi5.xlsx	# 156,190 identified somas
+│   ├── 20_mouse_neurons
+│   │   └── CCFv3_25um
+│   │       ├── 17302_00002_CP.swc	# {brain_id}_{neuron_id}_{brain_region}.swc
+│   │       ├── ...
+│   │       └── 18869_5705_x4706_y6107_AUDv.swc
+│   └── boutons
+│       └── CCFv3_25um
+│           ├── 20_neuron_boutons_apo	# Group by source brain region
+│           │   ├── 17302_00002_CP.apo	# {brain_id}_{neuron_id}_{brain_region}.swc
+│           │   ├── ...
+│           │   └── 18869_5705_x4706_y6107_AUDv.apo
+│           └── 20_neuron_projection_boutons_apo	# Group by projection brain region
+│               ├── r_0_g_156_b_117_GU2_3.apo	# r_{red}_g_{green}_b_{blue}_{brain_region}.apo
+│               ├── ...
+│               └── r_97_g_231_b_183_COApm.apo
 └── README.md
+
+11 directories, 349 files
 ```
 
 ## Usage
 
-Neuron reconstructions are stored in SWC format, which is a simple and commonly used standardized format. 
-Commonly used neuron morphology data analysis and visualization tools can directly read SWC format, such as [Vaa3D](https://github.com/Vaa3D/release). 
-For detailed SWC format descriptions, please refer to [neuromorpho.org](https://neuromorpho.org/myfaq.jsp).
+### Tools to Visualize All Data
 
-Bouton data are saved in OBJ format. The file format is open and has been adopted by other 3D graphics application vendors.
+You can use [CAR_WS_VR](https://github.com/neurogeom/CAR/releases/tag/v1.0.0) or [Vaa3D](https://github.com/Vaa3D/release) to visualize SWC format or APO format data.
+
+### Data Type
+
+#### Human
+
+we listed 80 human neurons from 10 cortical neurons in surgical tissues of 10 patients  with brain tumors. The files are named using the following format: {neuron_id}_{patient_id}_{brain_region}.swc.
+
+#### Mouse
+
+Mouse Data includes complete neuron data, soma data and bouton data.
+
+All data we provided has been registered to CCF-v3 (25um) space.
+
+##### Complete Neuron / Axons
+
+The data consists of 20 mouse neurons from 20 different cell types. The files are named using the following format: {brain_id}*{neuron_id}*{brain_region}.swc.
+
+##### Somas
 
 Soma morphometry is stored in a table with the following columns: Soma ID, fMOST BrainID, Soma_X(Raw brain, in voxel), Soma_Y(Raw brain, in voxel), Soma_Z(Raw brain, in voxel), Soma_X(CCFv3_25µm), Soma_Y(CCFv3_25µm), Soma_Z(CCFv3_25µm), Production platform, Registered CCF Region, Annotator.
 
-All the original mouse brain images were downloaded from the [Brain Image Library (BIL)](http://www.brainimagelibrary.org). The original human brain images are available upon request due to their large sizes.
+##### Synaptic Sites (Boutons)
 
-## Pre-process and Registration
+Boutons data are saved in the .apo format and is collected from 20 neurons. We offer two formats of bouton data:
 
-All SWC data were preprocessed before analysis, where mouse brain data were also registered.
-
-The following preprocessing steps were applied by using [Vaa3D](https://github.com/Vaa3D/release):
-
-- connect to soma (define soma n=1 and parent=-1)
-- sort nodes
-- tip branch pruning: threshold=6 pixels
-- resample: step=1
-
-The mouse brain performs registration of the whole mouse brain to [CCFv3](https://atlas.brain-map.org/) using [mBrainAligner](https://github.com/reaneyli/mBrainAligner-web).
+1. `20_neuron_boutons_apo`:
+   - These files are collected based on each soma brain region, and they are named using the following format: {brain_id}*{neuron_id}*{soma_brain_region}.apo.
+2. `20_neuron_projection_boutons_apo`:
+   - These files are collected based on each projection brain region, and they are named using the following format: r_{red}_g_{green}_b_{blue}_{brain_region}.apo.
