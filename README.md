@@ -1,15 +1,15 @@
-![The CAR platform allows various clients to access the cloud server, such as desktop workstations(blue), VR headsets(yellow), mobile phones(orange), and game console(green)](./assets/banner.png)
+![Overview of the CAR client software user interface. The CAR platform offers an array of diverse client software, each equipped with the ability to seamlessly interact with other clients, whether of the same type or different, through the CAR server. With the workstation (depicted by a blue icon), the virtual reality tool (yellow), or even the mobile app (orange), users can jointly explore neuronal data across multiple levels of resolution and execute various neuromorphometric tasks. Additionally, users may further access and curate neuronal data through the CAR game console (green).](./assets/banner.png)
 
 # Collaborative Augmented Reconstruction for Scaled Production of 3D Neuron Morphology in Mouse and Human Brains
 
 ![species: mouse](https://img.shields.io/badge/species-mouse-blue.svg)
 ![species: human](https://img.shields.io/badge/species-human-green.svg)
 
-Digital reconstruction of the intricate 3D morphology of individual neurons from microscopic images is widely recognized as a significant challenge in both individual research laboratories and large-scale scientific projects focused on cell types and brain anatomy. This task often fails both conventional manual reconstruction and state-of-the-art automatic reconstruction algorithms, even many of which are based on artificial intelligence (AI). It is also crucial to organize multiple neuroanatomists to produce and cross-validate biologically relevant and agreeable reconstructions in scaled data production. We propose an approach based on collaborative human intelligence augmented by AI. Specifically, we have developed a Collaborative Augmented Reconstruction (CAR) platform for neuron reconstruction. This platform allows for immersive interaction and efficient collaborative-editing of neuron anatomy using a variety of client devices, such as desktop workstations, virtual reality headsets, and mobile phones, enabling users to contribute anytime and anywhere and take advantage of several AI-based automation tools. We have applied CAR to reconstructing challenging mouse and human neurons towards a scale and faithfulness that have never been demonstrated before.
+Digital reconstruction of the intricate 3D morphology of individual neurons from microscopic images is widely recognized as a crucial challenge in both individual research laboratories and large-scale scientific projects focusing on cell types and brain anatomy. This task often fails both conventional manual reconstruction and state-of-the-art automatic reconstruction algorithms, even many of which are based on artificial intelligence (AI). It is also critical but challenging to organize multiple neuroanatomists to produce and cross-validate biologically relevant and agreeable reconstructions in scaled data production. Here we propose an approach based on collaborative human intelligence augmented by AI. Specifically, we have developed a Collaborative Augmented Reconstruction (CAR) platform for neuron reconstruction at scale. This platform allows for immersive interaction and efficient collaborative-editing of neuron anatomy using a variety of client devices, such as desktop workstations, virtual reality headsets, and mobile phones, enabling users to contribute anytime and anywhere and take advantage of several AI-based automation tools. We have tested CAR’s applicability for challenging mouse and human neurons towards a scaled and faithful data production. Our data indicate that the CAR platform is suitable for generating tens of thousands of neuronal reconstructions used in our companion studies.
 
-## Directory Structure
+## Structure of the Repository
 
-The repository consists of CAR source code and supplementary material, including neuron reconstructions, detected boutons and 156,190 identified somas.
+The repository consists of the CAR source code and the CAR generated data, including neuron reconstructions, detected boutons and 156,190 identified somas.
 
 ```
 CAR
@@ -18,13 +18,15 @@ CAR
 ├── CAR-Server	# source code of CAR server
 ├── CAR-VR-WS	# source code of CAR VR and workstation client
 ├── assets	# assets of documents
-├── data	# paper supplementary material
+├── data	# paper supplementary data
 │   ├── ...
 │   └── README.md   # data-related supporting documents
-└── README.md
+├── docs	# sections of user manual
+├── README.md
+└── USER_MANUAL.md
 ```
 
-## Usage
+## Instruction
 
 CAR provides multiple clients, multiple interaction methods, and multiple data format support, so a detailed [user manual](./USER_MANUAL.md) is provided.
 
@@ -32,4 +34,4 @@ The source code of CAR developed is released as open source and the release is a
 
 ## Questions
 
-If you have any questions, please contact us or open an [issue](https://github.com/neu/issues/new) on GitHub.
+If you have any questions, please contact us or open an [issue](https://github.com/neurogeom/CAR/issues/new) on GitHub.
