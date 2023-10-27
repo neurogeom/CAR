@@ -1,3 +1,5 @@
+:star::star::star: **A demo video will be updated soon** :star::star::star:
+
 ![Overview of the CAR client software user interface. The CAR platform offers an array of diverse client software, each equipped with the ability to seamlessly interact with other clients, whether of the same type or different, through the CAR server. With the workstation (depicted by a blue icon), the virtual reality tool (yellow), or even the mobile app (orange), users can jointly explore neuronal data across multiple levels of resolution and execute various neuromorphometric tasks. Additionally, users may further access and curate neuronal data through the CAR game console (green).](./assets/banner.png)
 
 # Collaborative Augmented Reconstruction for Scaled Production of 3D Neuron Morphology in Mouse and Human Brains
