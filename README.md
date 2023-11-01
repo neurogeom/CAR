@@ -1,4 +1,3 @@
-:star::star::star: **A demo video will be updated soon** :star::star::star:
 
 ![Overview of the CAR client software user interface. The CAR platform offers an array of diverse client software, each equipped with the ability to seamlessly interact with other clients, whether of the same type or different, through the CAR server. With the workstation (depicted by a blue icon), the virtual reality tool (yellow), or even the mobile app (orange), users can jointly explore neuronal data across multiple levels of resolution and execute various neuromorphometric tasks. Additionally, users may further access and curate neuronal data through the CAR game console (green).](./assets/banner.png)
 
@@ -37,3 +36,8 @@ The source code of CAR developed is released as open source and the release is a
 ## Questions
 
 If you have any questions, please contact us or open an [issue](https://github.com/neurogeom/CAR/issues/new) on GitHub.
+
+## Other resources
+
+- [preprint](https://www.researchsquare.com/article/rs-3371435/v1)
+- :star::star::star: **Other resouces such as demo videos are being updated.** :star::star::star:
