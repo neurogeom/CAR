@@ -40,4 +40,8 @@ If you have any questions, please contact us or open an [issue](https://github.c
 ## Other resources
 
 - [preprint](https://www.researchsquare.com/article/rs-3371435/v1)
-- :star::star::star: **Other resouces such as demo videos are being updated.** :star::star::star:
+- demo videos (more videos are being updated!)
+  - Neuron reconstruction using CAR-VR
+    
+    [![Neuron reconstruction using CAR-VR](https://img.youtube.com/vi/kSK-HIsErpc/hqdefault.jpg)](https://youtu.be/kSK-HIsErpc)
+
