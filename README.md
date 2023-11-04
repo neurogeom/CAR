@@ -44,8 +44,10 @@ If you have any questions, please contact us or open an [issue](https://github.c
   - Neuron reconstruction using CAR-VR
     
     [![Neuron reconstruction using CAR-VR](https://img.youtube.com/vi/kSK-HIsErpc/hqdefault.jpg)](https://youtu.be/kSK-HIsErpc)
-  - Soma pinpointing using CAR-Mobile
+  - Soma pinpointing using CAR-Mobile (Hi5)
  
-    [![Neuron reconstruction using CAR-VR](https://img.youtube.com/vi/8pA4QXjEviA/hqdefault.jpg)](https://youtu.be/8pA4QXjEviA)
+    [![Soma pinpointing using CAR-Mobile](https://img.youtube.com/vi/8pA4QXjEviA/hqdefault.jpg)](https://youtu.be/8pA4QXjEviA)
+  - Synapse validation using CAR-Mobile (Hi5)
 
+    [![Synapse validation using CAR-Mobile](https://img.youtube.com/vi/DkwmJDUlai8/hqdefault.jpg)](https://youtu.be/DkwmJDUlai8)
 
