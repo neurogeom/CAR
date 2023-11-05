@@ -41,6 +41,9 @@ If you have any questions, please contact us or open an [issue](https://github.c
 
 - [preprint](https://www.researchsquare.com/article/rs-3371435/v1)
 - demo videos (more videos are being updated!)
+  - Collaborative Augmented Reconstruction
+ 
+    [![Collaborative Augmented Reconstruction](https://img.youtube.com/vi/_r1YsA9fas0/hqdefault.jpg)](https://youtu.be/_r1YsA9fas0)
   - Neuron reconstruction using CAR-VR
     
     [![Neuron reconstruction using CAR-VR](https://img.youtube.com/vi/kSK-HIsErpc/hqdefault.jpg)](https://youtu.be/kSK-HIsErpc)
@@ -50,4 +53,3 @@ If you have any questions, please contact us or open an [issue](https://github.c
   - Synapse validation using CAR-Mobile (Hi5)
 
     [![Synapse validation using CAR-Mobile](https://img.youtube.com/vi/DkwmJDUlai8/hqdefault.jpg)](https://youtu.be/DkwmJDUlai8)
-
