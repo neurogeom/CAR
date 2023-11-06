@@ -53,3 +53,8 @@ If you have any questions, please contact us or open an [issue](https://github.c
   - Synapse validation using CAR-Mobile (Hi5)
 
     [![Synapse validation using CAR-Mobile](https://img.youtube.com/vi/DkwmJDUlai8/hqdefault.jpg)](https://youtu.be/DkwmJDUlai8)
+  - AI-based agents in CAR
+ 
+    [![AI-based agents in CAR](https://img.youtube.com/vi/xnw794lrpYU/hqdefault.jpg)](https://youtu.be/xnw794lrpYU)
+
+
