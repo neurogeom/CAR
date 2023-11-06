@@ -57,4 +57,6 @@ If you have any questions, please contact us or open an [issue](https://github.c
  
     [![AI-based agents in CAR](https://img.youtube.com/vi/xnw794lrpYU/hqdefault.jpg)](https://youtu.be/xnw794lrpYU)
 
+     <a href="https://youtu.be/xnw794lrpYU" target="_BLANK"><img src="https://img.youtube.com/vi/xnw794lrpYU/0.jpg" /></a>
+
 
