@@ -1,34 +1,6 @@
 # Data
 
-```
-data
-├── human
-│   └── 80_human_neurons	# 80 human neuron morphology reconstructed using CAR
-│       ├── 00011_P001_MFG.swc	# {neuron_id}_{patient_id}_{brain_region}.swc
-│       ├── ...
-│       └── 02322_P021_FL.swc
-├── mouse
-│   ├── 156k_soma
-│   │   └── soma_morphometry_Hi5.xlsx	# 156,190 identified somas
-│   ├── 20_mouse_neurons
-│   │   └── CCFv3_25um
-│   │       ├── 17302_00002_CP.swc	# {brain_id}_{neuron_id}_{brain_region}.swc
-│   │       ├── ...
-│   │       └── 18869_5705_x4706_y6107_AUDv.swc
-│   └── boutons
-│       └── CCFv3_25um
-│           ├── 20_neuron_boutons_apo	# Group by source brain region
-│           │   ├── 17302_00002_CP.apo	# {brain_id}_{neuron_id}_{brain_region}.swc
-│           │   ├── ...
-│           │   └── 18869_5705_x4706_y6107_AUDv.apo
-│           └── 20_neuron_projection_boutons_apo	# Group by projection brain region
-│               ├── r_0_g_156_b_117_GU2_3.apo	# r_{red}_g_{green}_b_{blue}_{brain_region}.apo
-│               ├── ...
-│               └── r_97_g_231_b_183_COApm.apo
-└── README.md
-
-11 directories, 349 files
-```
+Data available at <https://car.cvcd.xyz>.
 
 ## Usage
 
