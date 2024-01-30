@@ -1,6 +1,6 @@
 # Data
 
-Data available at <https://car.cvcd.xyz>.
+Data is available at <https://car.cvcd.xyz>.
 
 ## Usage
 
