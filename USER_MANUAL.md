@@ -7,5 +7,3 @@ The sections below describe CAR basic and advanced features on multi clients.
 3. [CAR-VR](./docs/3-CAR-VR.md)
 4. [CAR-Mobile](./docs/4-CAR-Mobile.md)
 5. [CAR-Game](./docs/5-CAR-Game.md)
-
-Generally the each client sections should be read after reading the [CAR-Server manual](./docs/1-CAR-Server.md).
