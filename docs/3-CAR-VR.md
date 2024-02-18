@@ -20,7 +20,9 @@ To exit CAR-VR, the user can either press the exit button on the setting control
 
 User interactions in CAR-VR is mainly carried out with the two handheld controllers. These two controllers can be used either individually or simultaneously. Two corresponding virtual models of the controllers are shown in CAR-VR, which have synchronized locations with the physical devices. The annotation controller (AC) is mainly used for annotation purpose, and the setting controller (SC) is mainly used to adjust various settings. Each controller has a touchpad and a trigger button. Their functions will be described in detail in the following sections. Besides, AC has a Menu button, and SC has a Quit button. The menu button is used to activate/deactivate the menu for various CAR-VR functions and settings. When the menu button is pressed, the menu for major CAR-VR functions appears on top of SC. Pressing the menu button again will hide the menu. In order to select a menu item, the user aims the red-colored shooting ray from AC at the desired menu item, and presses the trigger button of AC.
 
-![The controllers and the menu interface in CAR-VR](../assets/vr_controllers.png)
+![vr_controllers_01](../assets/vr_controllers_01.png)
+
+![vr_controllers_02](../assets/vr_controllers_02.png)
 
 ### Visualization
 

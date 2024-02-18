@@ -24,6 +24,7 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
     >
     > ![Entering](../assets/ws_entering.png)
     > </details>
+
 2. Configuration CAR
     1. Click `Collaborate` - `Config`;
     2. Enter the server configuration;
@@ -35,6 +36,7 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
     >
     > ![Authorization](../assets/ws_auth.png)
     > </details>
+
 3. Open image and load annotation
     1. Click `File` - `Open TeraFly Image(3-5D)` and choose an image;
     2. Users can collaborate in one room each other by download the same ano file.
@@ -45,8 +47,61 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
     >
     > ![Load Ano 2](../assets/ws_load_ano_2.png)
     > </details>
+
 4. Collaborators can annotate by using short cuts
+
     - **Alt-B**: invoke the curve drawing function using serial BBoxes;
+
     - **Alt-C**: invoke the multiple neuron-segments Connection function;
+
     - **Alt-D**: invoke the multiple neuron-segments Deleting function;
+
     - **Alt-S**: invoke the multiple neuron-segments Splitting/breaking function.
+
+      Auto reconstruction:
+
+      
+
+    ### How to use Data management system in CAR?
+
+    1) Click `Collaborate` - `Data Management Client` and invoke the data management system;
+
+       
+
+       ![ws_dbms_01](../assets/ws_dbms_01.png)
+       
+       
+
+    2. log into the data management system;
+
+    ![ws_dbms_login](../assets/ws_dbms_login.png)
+
+    3. Click on the "Import Swc File" button. In the pop-up window, select your morphology file and click "Import."
+
+![ws_dbms_import_swc_01](../assets/ws_dbms_import_swc_01.png)
+
+![ws_dbms_import_swc_02](../assets/ws_dbms_import_swc_02.png)
+
+4. Export data
+
+   Select the file, right-click, and choose "Export Swc File" from the context menu. After a new window pops up, select the destination path to save the file, then click 'Export' to export the file to the specified directory.
+   
+   ![ws_dbms_export_swc_01](../assets/ws_dbms_export_swc_01.png)
+
+![ws_dbms_export_swc_02](../assets/ws_dbms_export_swc_02.png)
+
+
+
+5. Version Control 
+
+   Select the file, right-click, and choose "Version Control" from the context menu.
+
+![version_control_00](../assets/version_control_00.png)
+
+A new window will appear, allowing the user to specify any timestamp for exporting or reverting to the reconstructed morphology using the 'Export' and 'Revert' buttons. This feature enables tracing back to historical reconstruction data at any desired moment.
+
+![version_control_01](../assets/version_control_01.png)
+
+Select "Export," and a new window will appear. In this window, users can view specific features of the exported morphology, including Swc Node Number, and choose the save path for the exported file.
+
+![version_control_02](../assets/version_control_02.png)
