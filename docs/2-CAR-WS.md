@@ -62,30 +62,37 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 
       
 
-    ### How to use Data management system in CAR?
 
-    1) Click `Collaborate` - `Data Management Client` and invoke the data management system;
+#### How to use Data management system in CAR?
 
-       <details>
-       <summary>Screenshots</summary>
-       
-       ![ws_dbms_01](../assets/ws_dbms_01.png)
-       
-       
-    
-    2. log into the data management system;
-    
-       <details>
-       <summary>Screenshots</summary>
-    
-    ![ws_dbms_login](../assets/ws_dbms_login.png)
-    
-    3. Click on the "Import Swc File" button. In the pop-up window, select your morphology file and click "Import."
-    
-       <details>
-       <summary>Screenshots</summary>
+------
+
+1. Click `Collaborate` - `Data Management Client` and invoke the data management system;
+
+
+<details>
+<summary>Screenshots</summary>
+
+![ws_dbms_01](../assets/ws_dbms_01.png)
+
+
+
+2. log into the data management system;
+
+<details>
+<summary>Screenshots</summary>
+
+![ws_dbms_login](../assets/ws_dbms_login.png)
+
+3. Click on the "Import Swc File" button. In the pop-up window, select your morphology file and click "Import."
+
+   <details>
+   <summary>Screenshots</summary>
 
 ![ws_dbms_import_swc_01](../assets/ws_dbms_import_swc_01.png)
+
+<details>
+<summary>Screenshots</summary>
 
 ![ws_dbms_import_swc_02](../assets/ws_dbms_import_swc_02.png)
 
