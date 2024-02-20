@@ -57,17 +57,84 @@ docker run -d --name redis \
 
 #### Start Nginx Service
 
-After importing the Redis image, use the following command to start the Redis container:
+After importing the Nginx image, use the following command to start the Nginx container:
 
 ```sh
-docker run -d --name redis \
+docker run -d --name nginx \
     --network braintell \
-    --ip 172.18.0.2 \
-    -p 26001:6379 \
-    redis
+    --ip 172.18.0.4 \
+    -p 26000:8000 \
+    nginx
 ```
 
-#### Start WebServer Service
+#### Start DBMS Service
+
+First, download the `DBMS.zip` from the release page, copy it to your Linux server and unzip it.
+
+After importing the DBMS image (including a swcdbms container and a mongodb container), run the deploy script to auto deploy the DBMS container:
+
+```sh
+cd <your file decompression directory>
+./deploy.sh 
+```
+
+#### Start AI Module
+Use the following command to start the superuser container:
+
+```sh
+docker run -itd --name superuser \
+--network braintell \
+--ip 172.18.0.6 \
+-v /TeraConvertedBrain:/TeraConvertedBrain \
+-v <savePathForPredict in application.yaml>:<savePathForPredict in application.yaml> \
+superuser:v3.0 /bin/bash
+```
+
+The `application.yaml` part is as follows: 114.117.165.134 is replaced with the your linux server IP, savePathForPredict can be customized according to your requirements. As for the username and password parts, you can use any user and password in the dbms.
+
+
+```yaml
+globalconfig:
+  urlForGetBBImage: "http://114.117.165.134:26000/dynamic/image/cropimage"
+  urlForGetBBSwc: "http://114.117.165.134:26000/dynamic/swc/cropswc"
+  urlForGetImageList: "http://114.117.165.134:26000/dynamic/image/getimagelist"
+  urlForCrossingModel: "http://114.117.165.134:26004/predictions"
+  urlForMissingModel: "http://114.117.165.134:26003/predictions"
+  mainPath: "/home/BraintellServer"
+  cropImageBin: "${globalconfig.mainPath}/vaa3d/cropimage"
+  dataPath: "${globalconfig.mainPath}/data"
+  tmpDir: "${globalconfig.mainPath}/tmp"
+  imageDir: "${globalconfig.mainPath}/image"
+  savePathForPredict: "/home/zhy/tmpDirForPredict"
+  tipPatchSize: [32,32,32]
+  crossingPatchSize: [32,32,32]
+  cropprocess: 50
+  username: zackzhy
+  password: 123456
+```
+
+After the docker container is started. Enter the container and use the following command to start superuser:
+
+```sh
+cd /home/SuperUser/SuperUserServer
+nohup java -jar SuperUserServer.jar --spring.config.location=file:./application.yaml &.
+```
+
+The next step is to start missing_model server. Use the following command to start the container first:
+```sh
+docker run -itd --name mybreakpoint_model \
+-v <savePathForPredict in application.yaml>:<savePathForPredict in application.yaml> \
+-p 26003:5000
+breakpoint_model:v1.0 /bin/bash
+```
+
+After the docker container is started. Use the following command to start:
+```sh
+cd /src
+nohup python -m cog.server.http &.
+```
+
+#### Start Core Module
 
 First, copy the `nginx.conf` file and `config.json` to your Linux server. The config files mentioned above are provided in the release page of this repository.
 
@@ -91,13 +158,16 @@ cd /home/BrainTellServer
 nohup /home/BrainTellServer/BrainTellServer0626 &.
 ```
 
-#### Start DBMS Service
 
-First, download the `DBMS.zip` from the release page, copy it to your Linux server and unzip it.
+## Customize
 
-After importing the DBMS image (including a swcdbms container and a mongodb container), run the deploy script to auto deploy the DBMS container:
+CAR-Server supports customizing the running status of the server by modifying the configuration file. Currently CAR-Server supports users to customize the following parameters:
 
-```sh
-cd <your file decompression directory>
-./deploy.sh 
-```
+
+| Parameter | Default | Description |
+| --------- | --------------- | ----------- |
+| MaxConnections   | 200         | Number of maximal concurrent connections     |
+| MaxJobs   | 20         | Number of maximal concurrent jobs     |
+| AIInterval   | 180        | Interval for AI module inference (seconds)     |
+
+The specific parameter configuration method will be updated soon.
