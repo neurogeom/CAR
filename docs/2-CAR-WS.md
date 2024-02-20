@@ -19,82 +19,76 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 ## Step-by-Step Guide
 
 1. Enter the CAR collaborate mode, `Advanced` - `Big-Image-Data` - `CAR-WS`
-    > <details>
-    > <summary>Screenshots</summary>
-    >
-    > ![Entering](../assets/ws_entering.png)
-    > </details>
+
+    <details>
+    <summary>Screenshots</summary>
+    
+    ![Entering](../assets/ws_entering.png)
+    </details>
 
 2. Configuration CAR
+
     1. Click `Collaborate` - `Config`;
     2. Enter the server configuration;
     3. Login to CAR by enter the username and password.
-    > <details>
-    > <summary>Screenshots</summary>
-    >
-    > ![Configuration](../assets/ws_config.png)
-    >
-    > ![Authorization](../assets/ws_auth.png)
-    > </details>
+    <details>
+    <summary>Screenshots</summary>
+    
+    ![Configuration](../assets/ws_config.png)
+    
+    ![Authorization](../assets/ws_auth.png)
+    </details>
 
 3. Open image and load annotation
+
     1. Click `File` - `Open TeraFly Image(3-5D)` and choose an image;
     2. Users can collaborate in one room each other by download the same ano file.
-    > <details>
-    > <summary>Screenshots</summary>
-    >
-    > ![Load Ano 1](../assets/ws_load_ano_1.png)
-    >
-    > ![Load Ano 2](../assets/ws_load_ano_2.png)
-    > </details>
+    <details>
+    <summary>Screenshots</summary>
+    
+    ![Load Ano 1](../assets/ws_load_ano_1.png)
+    
+    ![Load Ano 2](../assets/ws_load_ano_2.png)
+    </details>
 
 4. Collaborators can annotate by using short cuts
 
     - **Alt-B**: invoke the curve drawing function using serial BBoxes;
-
     - **Alt-C**: invoke the multiple neuron-segments Connection function;
-
     - **Alt-D**: invoke the multiple neuron-segments Deleting function;
-
     - **Alt-S**: invoke the multiple neuron-segments Splitting/breaking function.
 
       Auto reconstruction:
 
-      
 
 
 #### How to use Data management system in CAR?
 
-------
-
 1. Click `Collaborate` - `Data Management Client` and invoke the data management system;
 
+   <details>
+   <summary>Screenshots</summary>
 
-<details>
-<summary>Screenshots</summary>
+   ![ws_dbms_01](../assets/ws_dbms_01.png)
+   </details>
 
-![ws_dbms_01](../assets/ws_dbms_01.png)
+2. Log into the data management system;
 
+   <details>
+   <summary>Screenshots</summary>
 
-
-2. log into the data management system;
-
-<details>
-<summary>Screenshots</summary>
-
-![ws_dbms_login](../assets/ws_dbms_login.png)
+   ![ws_dbms_login](../assets/ws_dbms_login.png)
+   </details>
 
 3. Click on the "Import Swc File" button. In the pop-up window, select your morphology file and click "Import."
 
    <details>
    <summary>Screenshots</summary>
 
-![ws_dbms_import_swc_01](../assets/ws_dbms_import_swc_01.png)
+   ![ws_dbms_import_swc_01](../assets/ws_dbms_import_swc_01.png)
 
-<details>
-<summary>Screenshots</summary>
-
-![ws_dbms_import_swc_02](../assets/ws_dbms_import_swc_02.png)
+   ![ws_dbms_import_swc_02](../assets/ws_dbms_import_swc_02.png)
+   </details>
 
 4. Export data
 
@@ -105,34 +99,33 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
    
    ![ws_dbms_export_swc_01](../assets/ws_dbms_export_swc_01.png)
 
-<details>
-<summary>Screenshots</summary>
+   ![ws_dbms_export_swc_02](../assets/ws_dbms_export_swc_02.png)
+   </details>
 
-![ws_dbms_export_swc_02](../assets/ws_dbms_export_swc_02.png)
-
-
-
-5. Version Control 
+7. Version Control 
 
    1. Select the file, right-click, and choose "Version Control" from the context menu.
    
-   <details>
-   <summary>Screenshots</summary>
+      <details>
+      <summary>Screenshots</summary>
 
-![version_control_00](../assets/version_control_00.png)
+      ![version_control_00](../assets/version_control_00.png)
+      </details>
 
- 2. A new window will appear, allowing the user to specify any timestamp for exporting or reverting to  
+   2. A new window will appear, allowing the user to specify any timestamp for exporting or reverting to  
 
-    the reconstructed morphology using the 'Export' and 'Revert' buttons. This feature enables tracing back to historical reconstruction data at any desired moment.
+      the reconstructed morphology using the 'Export' and 'Revert' buttons. This feature enables tracing back to historical reconstruction data at any desired moment.
 
-<details>
-<summary>Screenshots</summary>
+      <details>
+      <summary>Screenshots</summary>
 
-![version_control_01](../assets/version_control_01.png)
+      ![version_control_01](../assets/version_control_01.png)
+      </details>
 
-3. Select "Export," and a new window will appear. In this window, users can view specific features of the exported morphology, including Swc Node Number, and choose the save path for the exported file.
+   3. Select "Export," and a new window will appear. In this window, users can view specific features of the exported morphology, including Swc Node Number, and choose the save path for the exported file.
 
-<details>
-<summary>Screenshots</summary>
+      <details>
+      <summary>Screenshots</summary>
 
-![version_control_02](../assets/version_control_02.png)
+      ![version_control_02](../assets/version_control_02.png)
+      </details>
