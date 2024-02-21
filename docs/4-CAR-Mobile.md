@@ -134,13 +134,8 @@ To enter the Collaboration Mode, please follow the instructions below:
 2. Within the Collaboration Mode interface, locate and click on the “Open File” button.
 3. This action will trigger a dialog box named “File Open” to appear.
 4. In the “File Open” dialog box, select the option “Open BigData”.
-5. Another dialog box named “Brain Number” will appear, providing you with the opportunity to choose the specific brain you wish to collaborate on with other device clients.
-6. Select the desired brain number from the available options.
-7. Once you have chosen the brain number, all neurons associated with that brain will be displayed.
-8. From the list of neurons, select the specific neuron you want to reconstruct.
-9. After selecting the neuron, a dialog box named “Ano Number” will appear.
-10. In the “Ano Number” dialog box, choose the specific anomaly (.ano) you want to reconstruct.
-11. Once you have selected the anomaly, the corresponding ano file and its corresponding image file will be presented.
+5. Another dialog box named “Ano Number” will appear, in the “Ano Number” dialog box, choose the specific anomaly (.ano) you want to reconstruct.
+6. Once you have selected the anomaly, the corresponding ano file and its corresponding image file will be presented.
 
 ![Collaboration Functions](../assets/mobile_collaboration_functions.png)
 
