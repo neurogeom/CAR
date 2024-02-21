@@ -22,20 +22,27 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 
     <details>
     <summary>Screenshots</summary>
-    
+
     ![Entering](../assets/ws_entering.png)
     </details>
 
 2. Configuration CAR
 
     1. Click `Collaborate` - `Config`;
+
     2. Enter the server configuration;
+
     3. Login to CAR by enter the username and password.
+
+       We have provided two available test users. The usernames and passwords are as follows:
+
+       1. Username: testuser Password: 123456
+       2. Username: testuser02 Password: 123456
     <details>
     <summary>Screenshots</summary>
-    
+
     ![Configuration](../assets/ws_config.png)
-    
+
     ![Authorization](../assets/ws_auth.png)
     </details>
 
@@ -45,22 +52,36 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
     2. Users can collaborate in one room each other by download the same ano file.
     <details>
     <summary>Screenshots</summary>
-    
+
     ![Load Ano 1](../assets/ws_load_ano_1.png)
-    
+
     ![Load Ano 2](../assets/ws_load_ano_2.png)
     </details>
 
-4. Collaborators can annotate by using short cuts
+    3. Choose any collaboration room (00029_P001_T01-S001_MFG_R0460_WY-20220415_GYC_03  (human brain) or 18454-00019 (mouse brain)) to enter the collaboration room.
+
+4. Manually annotation in CAR
+
+    Collaborators can annotate by using short cuts
 
     - **Alt-B**: invoke the curve drawing function using serial BBoxes;
     - **Alt-C**: invoke the multiple neuron-segments Connection function;
     - **Alt-D**: invoke the multiple neuron-segments Deleting function;
     - **Alt-S**: invoke the multiple neuron-segments Splitting/breaking function.
 
-      Auto reconstruction:
+5. Auto reconstruction in CAR
 
+   1. In Step 3, click on "18454-00019" to enter the "18454-00019" collaboration room.
 
+   2. Switch image resolution: You can double-click with the mouse to toggle between different image resolutions or right-click on a marker and select "Zoom-in to this selected marker location" to enter the highest resolution image. The mouse scroll wheel can also be used to zoom in or out to different image resolutions.
+
+   3. Right-click on an image block (ensure there is a marker in the image block before using the automatic tracking algorithm), and the following menu options will appear:
+
+      ![auto01](../assets/auto01.png)
+
+   4. Click the "app2Convenient" button to initiate tracking, and the following results will appear.
+
+      ![auto02](../assets/auto02.png)
 
 #### How to use Data management system in CAR?
 
