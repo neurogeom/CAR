@@ -17,9 +17,10 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 </details>
 
 ## Step-by-Step Guide
-Suitable data set
 
-Data should be image files (e.g., in TIFF format). To run demonstrations, the test data can be downloaded in.
+> **Suitable data set**
+>
+> The data should consist of image files (for example, in TIFF format). For demonstration purposes, [test data](../assets/demo_image_data) has been made available.
 
 1. Enter the CAR collaborate mode, `Advanced` - `Big-Image-Data` - `CAR-WS`
 
