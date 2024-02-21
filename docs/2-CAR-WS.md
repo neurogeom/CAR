@@ -117,13 +117,31 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
    ![ws_dbms_import_swc_02](../assets/ws_dbms_import_swc_02.png)
    </details>
 
+   To import the corresponding .ano and .apo files, right-click on the Swc file under the Swc column on the interface, and choose the "Edit Attachment" button.
+
+   <details>
+   <summary>Screenshots</summary>
+
+   ![ws_dbms_import_ano_apo_01](../assets/ws_dbms_import_ano_apo_01.png)
+
+   </details>
+
+   A pop-up window will appear. Sequentially choose to upload the corresponding .ano and .apo files.
+
+   <details>
+   <summary>Screenshots</summary>
+
+   ![ws_dbms_import_ano_apo_02](../assets/ws_dbms_import_ano_apo_02.png)
+
+   </details>
+
 4. Export data
 
    Select the file, right-click, and choose "Export Swc File" from the context menu. After a new window pops up, select the destination path to save the file, then click 'Export' to export the file to the specified directory.
-   
+
    <details>
    <summary>Screenshots</summary>
-   
+
    ![ws_dbms_export_swc_01](../assets/ws_dbms_export_swc_01.png)
 
    ![ws_dbms_export_swc_02](../assets/ws_dbms_export_swc_02.png)
@@ -135,36 +153,36 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 
       <details>
       <summary>Screenshots</summary>
-   
+
       ![version_control_00](../assets/version_control_00.png)
-   
+
       </details>
-   
+
    2. A new window will appear, allowing the user to specify any timestamp for exporting or reverting to  
-   
+
       the reconstructed morphology using the 'Export' and 'Revert' buttons. This feature enables tracing back to historical reconstruction data at any desired moment.
-   
+
       <details>
       <summary>Screenshots</summary>
-   
+
       ![version_control_01](../assets/version_control_01.png)
-   
+
       </details>
-   
+
    3. Select "Export," and a new window will appear. In this window, users can view specific features of the exported morphology, including Swc Node Number, and choose the save path for the exported file.
-   
+
       <details>
       <summary>Screenshots</summary>
-   
+
       ![version_control_02](../assets/version_control_02.png)
-   
+
       </details>
-   
+
    4. Select "Revert," and a new window will appear. In this window, users can revert the morphology in the desired time-stamp.
-   
+
       <details>
       <summary>Screenshots</summary>
-   
+
       ​    ![revert](../assets/revert.png)
 
 ​		</details>
