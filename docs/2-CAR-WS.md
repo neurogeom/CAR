@@ -58,7 +58,7 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
     ![Load Ano 2](../assets/ws_load_ano_2.png)
     </details>
 
-    3. Choose any collaboration room (00029_P001_T01-S001_MFG_R0460_WY-20220415_GYC_03  (human brain) or 18454-00019 (mouse brain)) to enter the collaboration room.
+    3. Choose any collaboration room (00029_P001_T01-S001_MFG_R0460_WY-20220415_GYC_03  (human brain neuron) or 18454-00019 (mouse brain neuron)) to enter the collaboration room.
 
 4. Manually annotation in CAR
 
@@ -70,7 +70,9 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
     - **Alt-S**: invoke the multiple neuron-segments Splitting/breaking function.
 
 5. Auto reconstruction in CAR
-
+   
+   We use the neurons from the mouse brain as an example:
+   
    1. In Step 3, click on "18454-00019" to enter the "18454-00019" collaboration room.
 
    2. Switch image resolution: You can double-click with the mouse to toggle between different image resolutions or right-click on a marker and select "Zoom-in to this selected marker location" to enter the highest resolution image. The mouse scroll wheel can also be used to zoom in or out to different image resolutions.
