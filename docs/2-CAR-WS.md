@@ -147,6 +147,14 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 
       <details>
       <summary>Screenshots</summary>
-
       ![version_control_02](../assets/version_control_02.png)
       </details>
+
+4. Select "Revert," and a new window will appear. In this window, users can revert the morphology in the desired timestamp.
+
+   <details>
+   <summary>Screenshots</summary>
+
+​	![revert](../assets/revert.png)
+
+​	</details>
