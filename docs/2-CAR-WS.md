@@ -125,10 +125,10 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
    ![ws_dbms_export_swc_02](../assets/ws_dbms_export_swc_02.png)
    </details>
 
-7. Version Control 
+5. Version Control 
 
    1. Select the file, right-click, and choose "Version Control" from the context menu.
-   
+
       <details>
       <summary>Screenshots</summary>
 
@@ -141,10 +141,9 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 
       <details>
       <summary>Screenshots</summary>
-
       ![version_control_01](../assets/version_control_01.png)
       </details>
-
+      
    3. Select "Export," and a new window will appear. In this window, users can view specific features of the exported morphology, including Swc Node Number, and choose the save path for the exported file.
 
       <details>
@@ -152,11 +151,11 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
       ![version_control_02](../assets/version_control_02.png)
       </details>
 
-4. Select "Revert," and a new window will appear. In this window, users can revert the morphology in the desired timestamp.
+   4. Select "Revert," and a new window will appear. In this window, users can revert the morphology in the desired time-stamp.
 
-   <details>
-   <summary>Screenshots</summary>
+      <details>
+      <summary>Screenshots</summary>
 
-​	![revert](../assets/revert.png)
+![revert](../assets/revert.png)
 
-​	</details>
+</details>
