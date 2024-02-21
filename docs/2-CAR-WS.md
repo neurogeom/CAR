@@ -4,7 +4,7 @@ CAR-WS, which are built upon the foundation of the Vaa3D system, while incorpora
 
 ## Installation
 
-The workstation client and the VR client share the same software. For Windows system user, please download and unzip the releases and click on `vaa3d_CAR.exe` to run the software. For others system user, please build CAR-VR-WS from scratch.
+The workstation client and the VR client share the same software. For Windows system user, please download and unzip the releases and click on `vaa3d_CAR.exe` to run the software. The whole installation will cost 1-2 minutes. For others system user, please build CAR-VR-WS from scratch.
 
 <details>
 <summary>Build CAR-WS-VR from scratch</summary>
@@ -17,6 +17,9 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 </details>
 
 ## Step-by-Step Guide
+Suitable data set
+
+Data should be image files (e.g., in TIFF format). To run demonstrations, the test data can be downloaded in.
 
 1. Enter the CAR collaborate mode, `Advanced` - `Big-Image-Data` - `CAR-WS`
 
