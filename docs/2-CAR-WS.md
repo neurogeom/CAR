@@ -131,31 +131,30 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 
       <details>
       <summary>Screenshots</summary>
-
       ![version_control_00](../assets/version_control_00.png)
       </details>
-
+      
    2. A new window will appear, allowing the user to specify any timestamp for exporting or reverting to  
-
+   
       the reconstructed morphology using the 'Export' and 'Revert' buttons. This feature enables tracing back to historical reconstruction data at any desired moment.
-
+   
       <details>
       <summary>Screenshots</summary>
       ![version_control_01](../assets/version_control_01.png)
       </details>
       
    3. Select "Export," and a new window will appear. In this window, users can view specific features of the exported morphology, including Swc Node Number, and choose the save path for the exported file.
-
+   
       <details>
       <summary>Screenshots</summary>
       ![version_control_02](../assets/version_control_02.png)
       </details>
-
+   
    4. Select "Revert," and a new window will appear. In this window, users can revert the morphology in the desired time-stamp.
-
+   
       <details>
       <summary>Screenshots</summary>
+      
+      ​    ![revert](../assets/revert.png)
 
-![revert](../assets/revert.png)
-
-</details>
+​		</details>
