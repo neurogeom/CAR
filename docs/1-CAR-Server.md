@@ -2,13 +2,23 @@
 
 CAR’s cloud server manages centralizing operations, synchronizing annotation data, and resolving any conflicts that may arise.
 
+## Preparation
+[Download Test Images](https://github.com/neurogeom/CAR/tree/main/assets/demo_image_data)
+
+Before installation, you need to upload image files to your own server in the specified directory on the server. We provide test images in Terafly format and recommend that you use the following commands to create folders and organize image data.
+
+```sh
+cd <your image path>
+mkdir TeraImage
+cp <Terafly format image> ./TeraImage
+```
+
 ## Installation
-
-The software can be run using two methods and listens to port 8000 by default. If the software does not work properly, please check your firewall configuration first.
-
 ### Download && Import Docker Images
+[Download Docker Images](http://cvcd.xyz:51919/software/CAR-Server/)
 
-The images of all CAR-related docker containers can be found in the release page of this repository for users to download. Download the latest version of all containers is recommended. 
+
+The images of all CAR-related docker containers can be found in the link above. Download the latest version of all containers is recommended. 
 
 After the download is complete, copy the images to the prepared Linux OS computer and use the following command to import all downloaded images:
 
@@ -16,7 +26,7 @@ After the download is complete, copy the images to the prepared Linux OS compute
 docker import <ImageName> <CustomContainerName>
 ```
 
-Use the same name of image file to assign the name of conatainer is recommended. Eg. If the image file name is 'redis.tar', the container name should be 'redis'.
+Use the same name of image file to assign the name of conatainer is recommended. Eg. If the image file name is `redis_v1.0.tar`, the container name should be `redis`.
 
 After the import is complete, use the `docker images` command to view all imported image information.
 
@@ -69,7 +79,7 @@ docker run -d --name nginx \
 
 #### Start DBMS Service
 
-First, download the `DBMS.zip` from the release page, copy it to your Linux server and unzip it.
+First, download the `DBMS.zip` from the link above, copy it to your Linux server and unzip it.
 
 After importing the DBMS image (including a swcdbms container and a mongodb container), run the deploy script to auto deploy the DBMS container:
 
@@ -145,7 +155,7 @@ docker run -itd --name braintellserver \
     -p 4000-5000:4000-5000 \
     -v <your config.json file path>:/home/BrainTellServer/config.json \
     -v <your nginx.conf file path>:/home/BrainTellServer/nginx.conf \
-    -v /TeraConvertedBrain/:/home/BrainTellServer/image \
+    -v <your image path>/TeraImage/:/home/BrainTellServer/image \
     --network braintell \
     --ip 172.18.0.5 \
     braintellserver /bin/bash
@@ -158,7 +168,6 @@ cd /home/BrainTellServer
 nohup /home/BrainTellServer/BrainTellServer0626 &.
 ```
 
-
 ## Customize
 
 CAR-Server supports customizing the running status of the server by modifying the configuration file. Currently CAR-Server supports users to customize the following parameters:
@@ -166,8 +175,39 @@ CAR-Server supports customizing the running status of the server by modifying th
 
 | Parameter | Default | Description |
 | --------- | --------------- | ----------- |
-| MaxConnections   | 200         | Number of maximal concurrent connections     |
-| MaxJobs   | 20         | Number of maximal concurrent jobs     |
-| AIInterval   | 180        | Interval for AI module inference (seconds)     |
+| max_connections   | 200         | Number of maximal concurrent connections     |
+| max_jobs   | 20         | Number of maximal concurrent jobs     |
+| ai_interval   | 180        | Interval for AI module inference (seconds)     |
 
-The specific parameter configuration method will be updated soon.
+Use `docker exec -it braintellserver /bin/bash` to enter the Core-Module container. The configuration file can be found in this path `/home/BrainTellServer/config.json`
+
+The contents of the config file are as follows, the parameters mentioned above are in the "collaboration" field:
+
+```json
+{
+  "collaboration":{
+    "max_connections": 200,
+    "max_jobs": 20,
+    "ai_interval": 180
+  },
+  "mysql":{
+    "user": <your username>,
+    "passwd": <your password>,
+    "ip": "172.18.0.3",
+    "port": "3306",
+    "db":"Brain"
+  },
+  "redis": {
+    "ip": "172.18.0.2",
+    "port": "6379"
+  },
+  "aeskey": "1111111111111111",
+  "mainpath": "/home/BrainTellServer",
+  "cropprocess": 100,
+  "queuesize": 11000,
+  "emails": [],
+  "v3d" : "/home/BrainTellServer/Vaa3D-x/Vaa3D-x",
+  "tmppath": "/home/BrainTellServer/tmppath"
+}
+```
+
