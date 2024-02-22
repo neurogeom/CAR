@@ -2,8 +2,17 @@
 
 CAR’s cloud server manages centralizing operations, synchronizing annotation data, and resolving any conflicts that may arise.
 
-If you want to deploy an CAR system based on your own data on your own machine, you can refer to this user manual below. 
+## System Requirements
+We recommend that your system and hardware resources meet the following requirements:
+```text
+OS: Ubuntu 20.04 LTS AMD64
+RAM: >= 64GB
+GPU: Nvidia GPU with compute capability >= 7.0
+Storage Space: >= 150GB
+Network: >= 10Mbps
+```
 
+<a id="preparation"></a>
 ## Preparation
 [Download Test Images](https://github.com/neurogeom/CAR/tree/main/assets/demo_image_data)
 
@@ -172,6 +181,7 @@ nohup /home/BrainTellServer/BrainTellServer0626 &.
 
 ## Customize
 
+### Modify Configuration
 CAR-Server supports customizing the running status of the server by modifying the configuration file. Currently CAR-Server supports users to customize the following parameters:
 
 
@@ -213,3 +223,25 @@ The contents of the config file are as follows, the parameters mentioned above a
 }
 ```
 
+### Upload Your Own Data
+The CAR-Server supports you to upload your own image data in Terafly format for subsequent collaborative reconstruction and other operations.
+
+The first step is to copy the image to the folder created in the [Preparation](#preparation) step.
+
+Next, you need to add the meta information of the image in the mysql database. Use the following command to access databse:
+
+```sh
+docker exec -it mysql /bin/bash
+mysql -u <username> -p <password>
+```
+
+Enter your username and password to enter the SQL command interactive window. 
+
+Normally, images in Terafly format contain multiple levels of resolution. We need to insert the image and resolution information into the t_image table. For example, suppose our terafly format image has three resolutions: `1024x1024x1024`, `512x512x512` and `256x256x256` and the image name is `18454`, you can use the following command to insert the meta information of the image:
+
+```sql
+USE Brain;
+INSERT INTO t_image (Name, Detail) VALUES ('18454', '["RES(1024x1024x1024)", "RES(512x512x512)", "RES(256x256x256)"]');
+```
+
+It should be noted that the resolution information in the detail field needs to be arranged in `descending` order.
