@@ -36,10 +36,11 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 
     2. Login to CAR by enter the username and password.
 
-       We have provided two available test users. The usernames and passwords are as follows:
+       **We have provided two available test users. The usernames and passwords are as follows:**
 
-       1. Username: testuser Password: 123456
-       2. Username: testuser02 Password: 123456
+       1. ***Username***: testuser ***Password***: 123456
+       2. ***Username***: testuser02 ***Password***: 123456
+
     <details>
     <summary>Screenshots</summary>
 
