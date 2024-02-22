@@ -2,7 +2,7 @@
 
 CAR’s cloud server manages centralizing operations, synchronizing annotation data, and resolving any conflicts that may arise.
 
-If you want to deploy an CAR system based on your own data and models on your own machine, you can refer to this user manual below. 
+If you want to deploy an CAR system based on your own data on your own machine, you can refer to this user manual below. 
 
 ## Preparation
 [Download Test Images](https://github.com/neurogeom/CAR/tree/main/assets/demo_image_data)
