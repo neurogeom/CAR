@@ -119,7 +119,7 @@ globalconfig:
   urlForGetBBImage: "http://114.117.165.134:26000/dynamic/image/cropimage"
   urlForGetBBSwc: "http://114.117.165.134:26000/dynamic/swc/cropswc"
   urlForGetImageList: "http://114.117.165.134:26000/dynamic/image/getimagelist"
-  urlForCrossingModel: "http://114.117.165.134:26004/predictions"
+  urlForBranchingModel: "http://114.117.165.134:26013/predictions"
   urlForMissingModel: "http://114.117.165.134:26003/predictions"
   mainPath: "/home/BraintellServer"
   cropImageBin: "${globalconfig.mainPath}/vaa3d/cropimage"
@@ -128,7 +128,7 @@ globalconfig:
   imageDir: "${globalconfig.mainPath}/image"
   savePathForPredict: "/home/zhy/tmpDirForPredict"
   tipPatchSize: [32,32,32]
-  crossingPatchSize: [32,32,32]
+  branchingPatchSize: [64,64,64]
   cropprocess: 50
   username: zackzhy
   password: 123456
@@ -141,12 +141,20 @@ cd /home/SuperUser/SuperUserServer
 nohup java -jar SuperUserServer.jar --spring.config.location=file:./application.yaml &.
 ```
 
-The next step is to start missing_model server. Use the following command to start the container first:
+The next step is to start Terminal Point Verifier model server. Use the following command to start the container first:
 ```sh
 docker run -itd --name mybreakpoint_model \
 -v <savePathForPredict in application.yaml>:<savePathForPredict in application.yaml> \
 -p 26003:5000
 breakpoint_model:v1.0 /bin/bash
+```
+
+Next step is to start Branching Point Verifier model server. Use the following command to start the container first:
+```sh
+docker run -itd --name mybranchingpoint_model \
+-v <savePathForPredict in application.yaml>:<savePathForPredict in application.yaml> \
+-p 26013:5000
+branchingpoint_model:v1.0 /bin/bash
 ```
 
 After the docker container is started. Use the following command to start:
