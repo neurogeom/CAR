@@ -184,7 +184,7 @@ After the docker container is started. Use the following command to start webser
 
 ```sh
 cd /home/BrainTellServer
-nohup /home/BrainTellServer/BrainTellServer0626 &.
+nohup /home/BrainTellServer/BrainTellServerDBMS &.
 ```
 
 ## Customize
