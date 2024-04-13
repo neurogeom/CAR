@@ -2,6 +2,7 @@
 
 CAR-WS, which are built upon the foundation of the Vaa3D system, while incorporating a cloud server and enabling collaborative capabilities. And it also take several features from [Vaa3D](http://www.vaa3d.org/), refers the [User Manual](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/UserManual.wiki) for details.
 
+
 ## Installation
 
 The workstation client and the VR client share the same software. For Windows system user, please download and unzip the releases and click on `vaa3d_CAR.exe` to run the software. The whole installation will cost 1-2 minutes. For others system user, please build CAR-VR-WS from scratch.
@@ -13,175 +14,232 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 
 - [On Linux](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/Build-Vaa3D-on-Linux): Build CAR-VR-WS with MSVC and QMake.
 - [On Windows](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/Build-Vaa3D-on-Windows-(QMake)): Build CAR-VR-WS with LLVM and QMake.
-- [On Mac](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/Build-Vaa3D-on-Mac-OS): Build CAR-VR-WS with GCC and 
+
 </details>
 
-## Step-by-Step Guide
 
-> **Suitable data set**
+## Configuration and authorization
+
+> [!TIP] Test data and server
 >
-> The data should consist of image files (for example, in TIFF format). For demonstration purposes, [test data](../assets/demo_image_data) has been made available.
+> Suitable data should consist of image files, such as those in TIFF format. For demonstration purposes, [test data](../assets/demo_image_data) is available for use.
+> 
+> If you are using our test server, we have provided two available test users. The usernames and passwords are as follows:
+> 
+> - Username: `testuser`, password: `123456`
+> - Username: `testuser02`, password: `123456`
+> 
+> Additionally, we have already created two annotation files (two collaboration rooms), don't worry, you will encounter them in the upcoming tutorial.
+> - A human brain neuron: `00029_P001_T01-S001_MFG_R0460_WY-20220415_GYC_03`.
+> - A mouse brain neuron: `18454-00019`.
 
-1. Enter the CAR collaborate mode, `Advanced` - `Big-Image-Data` - `CAR-WS`
 
-    <details>
-    <summary>Screenshots</summary>
+<details>
+<summary>Screenshots for configuration and authorization</summary>
 
-    ![Entering](../assets/ws_entering.png)
-    </details>
+![The CAR-WS entry](../assets/ws_entering.png)
 
-2. Configuration CAR
+**Figure 1**. The entry for CAR-WS.
 
-    1. Click `Collaborate` - `Config`;
 
-    2. Login to CAR by enter the username and password.
+![The CAR-WS configuration](../assets/ws_config.png)
 
-       **We have provided two available test users. The usernames and passwords are as follows:**
+**Figure 2**. The interface for config CAR-WS.
 
-       1. ***Username***: testuser ***Password***: 123456
-       2. ***Username***: testuser02 ***Password***: 123456
 
-    <details>
-    <summary>Screenshots</summary>
+![The CAR-WS authorization.](../assets/ws_auth.png)
 
-    ![Configuration](../assets/ws_config.png)
+**Figure 3**. The interface for authenticating CAR-WS.
+</details>
 
-    ![Authorization](../assets/ws_auth.png)
-    </details>
 
-3. Open image and load annotation
+1. Click `Advanced` - `Big-Image-Data` - `CAR-WS` to open the panel.
+2. Configuration before using.
+    1. Click `Collaborate` - `Config`.
+    2. A dialog will appear prompting for a username and password. Log in to CAR by entering the username and password.
 
-    1. Click `File` - `Open TeraFly Image(3-5D)` and choose an image;
-    2. Users can collaborate in one room each other by download the same ano file.
-    <details>
-    <summary>Screenshots</summary>
+## Annotation 
 
-    ![Load Ano 1](../assets/ws_load_ano_1.png)
+### Open image and load annotation
 
-    ![Load Ano 2](../assets/ws_load_ano_2.png)
-    </details>
+<details>
+<summary>Screenshots for open image and load annotation</summary>
+    
 
-    3. Choose any collaboration room (00029_P001_T01-S001_MFG_R0460_WY-20220415_GYC_03  (human brain neuron) or 18454-00019 (mouse brain neuron)) to enter the collaboration room.
+![The entry for loading annotations](../assets/ws_load_ano_1.png)
 
-4. Manually annotation in CAR
+**Figure 4**. The entry for loading annotations.
 
-    Collaborators can annotate by using short cuts
 
-    - **Alt-B**: invoke the curve drawing function using serial BBoxes;
-    - **Alt-C**: invoke the multiple neuron-segments Connection function;
-    - **Alt-D**: invoke the multiple neuron-segments Deleting function;
-    - **Alt-S**: invoke the multiple neuron-segments Splitting/breaking function.
+![The interface for loading annotations](../assets/ws_load_ano_2.png)
+    
+**Figure 5**. The view for loading annotations.
+</details>
 
-5. Auto reconstruction in CAR
-   
-   We use the neurons from the mouse brain as an example:
-   
-   1. In Step 3, click on "18454-00019" to enter the "18454-00019" collaboration room.
+1. Click `File` - `Open TeraFly Image(3-5D)` and choose an terafly format image.
+2. Click `Collaborate` - `Load Reconstruction From Server` and then choose an annotation file (usually containing soma coordinates).
+3. Choose any of them and click on `LoadAno` to enter collaboration mode.
+4. A message window will pop up stating "Connect success! Ready to start collaborating". Click `OK` you can collaborate with others. Users can collaborate in one room each other by choose the same annotation file.
 
-   2. Switch image resolution: You can double-click with the mouse to toggle between different image resolutions or right-click on a marker and select "Zoom-in to this selected marker location" to enter the highest resolution image. The mouse scroll wheel can also be used to zoom in or out to different image resolutions.
 
-   3. Right-click on an image block (ensure there is a marker in the image block before using the automatic tracking algorithm), and the following menu options will appear:
+### Basic operations in manually annotation in CAR
 
-      ![auto01](../assets/auto01.png)
+During the annotation process, you can understand the current resolution of the image by viewing the "Resolution" option on the panel while toggling the resolution with a double-click of the mouse or scrolling the mouse wheel upwards.
 
-   4. Click the "app2Convenient" button to initiate tracking, and the following results will appear.
+After annotating the neural signal in the current image, you can click the left and right arrows for x/y/z under "Volume Of Interest (VOI)'s coordinates" to translate the image block along the X/Y/Z directions in the coordinate system (the colors of the arrows correspond to the colors of the coordinate system), allowing continued annotation of this neuron in a new image block.
 
-      ![auto02](../assets/auto02.png)
+In the annotation process, the "Contrast" option is typically used to adjust the contrast between the signal and the background, aiding in identifying weak signals.
 
-#### How to use Data management system in CAR?
+If other signals interfere significantly with this neuron signal, you can reduce interference by adjusting the scroll bars for X-cut / Y-cut / Z-cut under the "Volume Cut" option to hide portions of the image block along the X/Y/Z directions in the coordinate system.
 
-1. Click `Collaborate` - `Data Management Client` and invoke the data management system;
+This makes it easier to judge the correct direction of the signal. Additionally, the scroll bars for X/Y/Z directions under the "Surface Cut" option can hide or display annotated line segments in the corresponding directions, also helping to reduce interference. 
 
-   <details>
-   <summary>Screenshots</summary>
+When encountering situations where the neuron signal is intertwined with other signals and is difficult to determine, you can adjust the "Z-thick" option to stretch along the Z-axis direction. If using the above options still makes it difficult to judge the correct direction of the neuron
 
-   ![ws_dbms_01](../assets/ws_dbms_01.png)
-   </details>
+During the annotation process, simply move the cursor to the desired location and press the `Q` key to quickly place a marker there.
 
-2. Log into the data management system;
+Several shortcuts are provided to facilitate annotation:
 
-   <details>
-   <summary>Screenshots</summary>
+| Shortcut          | Action                                                                |
+| ----------------- | --------------------------------------------------------------------- |
+| `Q`               | Define a marker.                                                      |
+| `S`               | Toggle show/hide the line segment                                     |
+| `Alt`-`B`         | **B**Boxes Mode: Draw curves using serial bounding boxes.             |
+| `Alt`-`C`         | **C**onnection Mode: Connect multiple neuron segments.                |
+| `Alt`-`D`         | **D**eleting Mode: Delete multiple neuron segments.                   |
+| `Alt`-`S`         | **S**plitting/breaking Mode: Split or break multiple neuron segments. |
+| `Alt`-`T`         | **T**yping Mode: Change types for multiple neuron segments.           |
+| `Shift`-`Alt`-`T` | Color Setting Mode: Set the color of neuron segments.                 |
 
-   ![ws_dbms_login](../assets/ws_dbms_login.png)
-   </details>
 
-3. Click on the "Import Swc File" button. In the pop-up window, select your morphology file and click "Import."
+### Auto reconstruction in CAR
 
-   <details>
-   <summary>Screenshots</summary>
+<details>
+<summary>Screenshots for auto reconstruction</summary>
 
-   ![ws_dbms_import_swc_01](../assets/ws_dbms_import_swc_01.png)
+![The entry for auto reconsturction, example in mouse brain "18454-00019"](../assets/auto01.png)
 
-   ![ws_dbms_import_swc_02](../assets/ws_dbms_import_swc_02.png)
-   </details>
+**Figure 6**. The entry for auto reconsturction, example in mouse brain "18454-00019".
 
-   To import the corresponding .ano and .apo files, right-click on the Swc file under the Swc column on the interface, and choose the "Edit Attachment" button.
 
-   <details>
-   <summary>Screenshots</summary>
+![The results for auto reconsturction, example in mouse brain "18454-00019"](../assets/ws_load_ano_2.png)
+    
+**Figure 7**. The results for auto reconsturction, example in mouse brain "18454-00019".
+</details>
 
-   ![ws_dbms_import_ano_apo_01](../assets/ws_dbms_import_ano_apo_01.png)
+1. Open image and entering the corresponding collaboration room.
+2. Switch image resolution.
+    - Double-click to toggle between different image resolutions or right-click on a marker and select `Zoom-in to this selected marker location` to enter the highest resolution image.
+    - The mouse scroll wheel can also be used to zoom in or out to different image resolutions.
+3. Right-click on an image block that contains a marker to activate the automatic tracking algorithm. A menu with options will then appear.
+4. Click the `app2Convenient` button to initiate the tracking process. The results will appear in a few minutes, please be patient.
 
-   </details>
 
-   A pop-up window will appear. Sequentially choose to upload the corresponding .ano and .apo files.
+## Management Data
 
-   <details>
-   <summary>Screenshots</summary>
+### Upload annotated files
 
-   ![ws_dbms_import_ano_apo_02](../assets/ws_dbms_import_ano_apo_02.png)
 
-   </details>
+<details>
+<summary>Screenshots for upload annotated files</summary>
 
-4. Export data
+![ws_dbms_01](../assets/ws_dbms_01.png)
+    
+**Figure 8**. The entry for data managment client.
 
-   Select the file, right-click, and choose "Export Swc File" from the context menu. After a new window pops up, select the destination path to save the file, then click 'Export' to export the file to the specified directory.
 
-   <details>
-   <summary>Screenshots</summary>
+![ws_dbms_login](../assets/ws_dbms_login.png)
+    
+**Figure 9**. The interface for authenticating the data management client.
 
-   ![ws_dbms_export_swc_01](../assets/ws_dbms_export_swc_01.png)
 
-   ![ws_dbms_export_swc_02](../assets/ws_dbms_export_swc_02.png)
-   </details>
+![The entry for upload SWC files](../assets/ws_dbms_import_swc_01.png)
 
-5. Version Control 
+**Figure 10**. The entry for upload `.swc` files.
 
-   1. Select the file, right-click, and choose "Version Control" from the context menu.
 
-      <details>
-      <summary>Screenshots</summary>
+![The interface for upload SWC files](../assets/ws_dbms_import_swc_02.png)
 
-      ![version_control_00](../assets/version_control_00.png)
+**Figure 11**. The interface for upload `.swc` files.
 
-      </details>
 
-   2. A new window will appear, allowing the user to specify any timestamp for exporting or reverting to  
+![The entry for upload APO or ANO files](../assets/ws_dbms_import_ano_apo_01.png)
 
-      the reconstructed morphology using the 'Export' and 'Revert' buttons. This feature enables tracing back to historical reconstruction data at any desired moment.
+**Figure 12**. The entry for upload `.apo`/`.ano` files.
 
-      <details>
-      <summary>Screenshots</summary>
 
-      ![version_control_01](../assets/version_control_01.png)
+![The entry for upload APO or ANO files](../assets/ws_dbms_import_ano_apo_02.png)
 
-      </details>
+**Figure 13**. The interface for upload `.apo`/`.ano` files.
+</details>
 
-   3. Select "Export," and a new window will appear. In this window, users can view specific features of the exported morphology, including Swc Node Number, and choose the save path for the exported file.
+1. Click `Collaborate` - `Data Management Client` and invoke the data management system.
+2. Log into the data management system.
+3. Upload your annotated files.
+    1. Select the `Swc` option from column, right-click  on the interface, and click on the `Import Swc File` button.
+    2. In the pop-up window, you can choose `Select Import Files` to upload single files, or choose `Select Import Folder` to upload files in bulk, and then click `Import`. The file formats can be 'ano', 'swc', or 'apo'.
+    3. Suppose you have uploaded an `.swc` file. If you want to select and upload the corresponding `.ano` and `.apo` files for a single SWC file, right-click on the specific `.swc` file, and choose the Edit Attachment button. A pop-up window will appear. Sequentially choose to upload the corresponding `.ano` and `.apo` files.
 
-      <details>
-      <summary>Screenshots</summary>
 
-      ![version_control_02](../assets/version_control_02.png)
 
-      </details>
+### Export annotated files
 
-   4. Select "Revert," and a new window will appear. In this window, users can revert the morphology in the desired time-stamp.
+<details>
+<summary>Screenshots for export annotated files</summary>
 
-      <details>
-      <summary>Screenshots</summary>
+![ws_dbms_export_swc_01](../assets/ws_dbms_export_swc_01.png)
+    
+**Figure 14**. The entry for export annotated files.
 
-      ​    ![revert](../assets/revert.png)
 
-​		</details>
+![ws_dbms_export_swc_02](../assets/ws_dbms_export_swc_02.png)
+
+**Figure 15**. The interface for export annotated files.
+</details>
+
+ Select the `Swc` option from column, right-click  on the interface, and click on the `Export Swc File` button. After a new window pops up, select the destination path to save the file, check the files you want to download (one or more), then click `Export` to export the files to the specified directory.
+
+
+
+### Version control
+
+<details>
+<summary>Screenshots for version control
+</summary>
+    
+![The entry for version control](../assets/version_control_00.png)
+
+**Figure 16**. The entry for version control.
+
+
+![The interface for version control based on snapshots](../assets/version_control_01.png)
+
+**Figure 17**. The interface for version control based on snapshots.
+
+
+![The versions tree viewer](../assets/version_control_02.png)
+
+**Figure 18**. The versions tree viewer.
+
+
+![The interface for version rollback](../assets/revert.png)
+    
+**Figure 19**. The interface for version rollback.
+</details>
+
+
+#### Version control based on snapshots
+
+Select the file, right-click, and choose `Create Snapshot` from the context menu.Users can create snapshots to save the current annotation results at a specific moment. Each snapshot will be recorded and stored for future reference.
+
+
+#### Version control based on timestamps
+
+1. Select the file, right-click, and choose `Version Control` from the context menu.
+2. A new window will appear, allowing the user to specify any timestamp for exporting or reverting to the reconstructed morphology using the `Export` and `Revert` buttons. This feature enables tracing back to historical reconstruction data at any desired moment.
+3. Select `Export`, and a new window will appear. In this window, users can view specific features of the exported morphology, including Swc Node Number, and choose the save path for the exported file.
+
+
+#### Version rollback
+
+Before selecting `Revert`, users will be prompted to export a backup. Only after exporting the backup can they proceed with the revert process. Upon selecting `Revert`, a new window will appear where users can revert the morphology to the desired time-stamp.
