@@ -20,7 +20,7 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 
 ## Configuration and authorization
 
-> [!TIP] Test data and server
+> [!TIP]
 >
 > Suitable data should consist of image files, such as those in TIFF format. For demonstration purposes, [test data](../assets/demo_image_data) is available for use.
 > 
