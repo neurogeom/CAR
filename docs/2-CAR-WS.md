@@ -4,7 +4,7 @@
 CAR-WS is built upon the foundation of the Vaa3D system, incorporating a cloud server and enabling collaborative capabilities. It also incorporates several features from [Vaa3D](http://www.vaa3d.org/), please refers the [User Manual](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/UserManual.wiki) for details.
 
 
-## Installation
+# Installation
 
 The workstation client and the VR client share the same software. For Windows system user, please download and unzip the releases and click on `vaa3d_CAR.exe` to run the software. The whole installation will cost 1-2 minutes. For others system user, please build CAR-VR-WS from scratch.
 
@@ -19,7 +19,7 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 </details>
 
 
-## Configuration and authorization
+# Configuration and authorization
 
 > [!TIP]
 >
@@ -59,7 +59,7 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
     1. Click `Collaborate` - `Config`.
     2. A dialog will appear prompting for a username and password. Log in to CAR by entering the username and password.
 
-## Annotation 
+# Annotation 
 
 ### Open image and load annotation
 
@@ -136,7 +136,7 @@ Several shortcuts are provided to facilitate annotation:
 4. Click the `app2Convenient` button to initiate the tracking process. The results will appear in a few minutes, please be patient.
 
 
-## Management Data
+# Management Data
 
 ### Upload annotated files
 
