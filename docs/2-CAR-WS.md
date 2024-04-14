@@ -156,22 +156,22 @@ Several shortcuts are provided to facilitate annotation:
 
 ![The entry for upload SWC files](../assets/ws_dbms_import_swc_01.png)
 
-**Figure 10**. The entry for upload `.swc` files.
+**Figure 10**. The entry for uploading a single `.swc` file or multiple files with formats such as `ano`, `swc`, or `apo`.
 
 
 ![The interface for upload SWC files](../assets/ws_dbms_import_swc_02.png)
 
-**Figure 11**. The interface for upload `.swc` files.
+**Figure 11**. The entry for uploading a single `.swc` file or multiple files with formats such as `ano`, `swc`, or `apo`.
 
 
 ![The entry for upload APO or ANO files](../assets/ws_dbms_import_ano_apo_01.png)
 
-**Figure 12**. The entry for upload `.apo`/`.ano` files.
+**Figure 12**. The entry for uploading `.apo`/`.ano` files.
 
 
 ![The entry for upload APO or ANO files](../assets/ws_dbms_import_ano_apo_02.png)
 
-**Figure 13**. The interface for upload `.apo`/`.ano` files.
+**Figure 13**. The interface for uploading `.apo`/`.ano` files.
 </details>
 
 1. Click `Collaborate` - `Data Management Client` and invoke the data management system.
