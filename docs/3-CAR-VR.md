@@ -2,7 +2,7 @@
 
 ## Installation
 
-CAR-VR and CAR-WS have the same installation steps since they share the same software, please refers to [CAR-WS#Installation](./2-CAR-WS.md#Installation)
+CAR-VR and CAR-WS have the same installation steps since they share the same software. Please refer to [CAR-WS#Installation](./2-CAR-WS.md#Installation)
 
 ## Step-by-Step Guide
 
