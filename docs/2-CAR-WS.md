@@ -1,12 +1,12 @@
 # CAR-WS
 
 
-CAR-WS is built upon the foundation of the Vaa3D system, incorporating a cloud server and enabling collaborative capabilities. It also incorporates several features from [Vaa3D](http://www.vaa3d.org/), please refer the [User Manual](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/UserManual.wiki) for details.
+CAR-WS is built upon the foundation of the Vaa3D system, incorporating a cloud server and enabling collaborative capabilities. It also incorporates several features from [Vaa3D](http://www.vaa3d.org/). Please refer the [User Manual](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/UserManual.wiki) for details.
 
 
 # Installation
 
-The workstation client and the VR client share the same software. For Windows system user, please download and unzip the releases and click on `vaa3d_CAR.exe` to run the software. The whole installation will cost 1-2 minutes. For others system users, please build CAR-VR-WS from scratch.
+The workstation client and the VR client share the same software. For Windows system user, please download and unzip the releases and click on `vaa3d_CAR.exe` to run the software. The whole installation will cost 1-2 minutes.  For users of other systems, please build CAR-VR-WS from scratch.
 
 <details>
 <summary>Build CAR-WS-VR from scratch</summary>
@@ -186,16 +186,16 @@ Several shortcuts are provided to facilitate annotation:
 ### Export annotated files
 
 <details>
-<summary>Screenshots for export annotated files</summary>
+<summary>Screenshots for exporting annotated files</summary>
 
 ![ws_dbms_export_swc_01](../assets/ws_dbms_export_swc_01.png)
     
-**Figure 14**. The entry for export annotated files.
+**Figure 14**. The entry for exporting annotated files.
 
 
 ![ws_dbms_export_swc_02](../assets/ws_dbms_export_swc_02.png)
 
-**Figure 15**. The interface for export annotated files.
+**Figure 15**. The interface for exporting annotated files.
 </details>
 
  Select the `Swc` option from column, right-click  on the interface, and click on the `Export Swc File` button. After a new window pops up, select the destination path to save the file, check the files you want to download (one or more), then click `Export` to export the files to the specified directory.
