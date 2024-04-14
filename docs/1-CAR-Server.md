@@ -1,6 +1,6 @@
 # CAR Server
 
-CAR’s cloud server manages centralizing operations, synchronizing annotation data, and resolving any conflicts that may arise.
+CAR’s cloud server manages centralized operations, synchronizes annotation data, and resolves any conflicts that may arise.
 
 ## System Requirements
 We recommend that your system and hardware resources meet the following requirements:
