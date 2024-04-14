@@ -64,7 +64,7 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 ### Open image and load annotations
 
 <details>
-<summary>Screenshots for open image and load annotation</summary>
+<summary>Screenshots for opening image and loading annotations</summary>
     
 
 ![The entry for loading annotations](../assets/ws_load_ano_1.png)
