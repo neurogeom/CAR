@@ -1,12 +1,12 @@
 # CAR-WS
 
 
-CAR-WS is built upon the foundation of the Vaa3D system, incorporating a cloud server and enabling collaborative capabilities. It also incorporates several features from [Vaa3D](http://www.vaa3d.org/), please refers the [User Manual](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/UserManual.wiki) for details.
+CAR-WS is built upon the foundation of the Vaa3D system, incorporating a cloud server and enabling collaborative capabilities. It also incorporates several features from [Vaa3D](http://www.vaa3d.org/), please refer the [User Manual](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/UserManual.wiki) for details.
 
 
 # Installation
 
-The workstation client and the VR client share the same software. For Windows system user, please download and unzip the releases and click on `vaa3d_CAR.exe` to run the software. The whole installation will cost 1-2 minutes. For others system user, please build CAR-VR-WS from scratch.
+The workstation client and the VR client share the same software. For Windows system user, please download and unzip the releases and click on `vaa3d_CAR.exe` to run the software. The whole installation will cost 1-2 minutes. For others system users, please build CAR-VR-WS from scratch.
 
 <details>
 <summary>Build CAR-WS-VR from scratch</summary>
@@ -61,7 +61,7 @@ CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can ref
 
 # Annotation 
 
-### Open image and load annotation
+### Open image and load annotations
 
 <details>
 <summary>Screenshots for open image and load annotation</summary>
@@ -93,9 +93,9 @@ In the annotation process, the "Contrast" option is typically used to adjust the
 
 If other signals interfere significantly with this neuron signal, you can reduce interference by adjusting the scroll bars for X-cut / Y-cut / Z-cut under the "Volume Cut" option to hide portions of the image block along the X/Y/Z directions in the coordinate system.
 
-This makes it easier to judge the correct direction of the signal. Additionally, the scroll bars for X/Y/Z directions under the "Surface Cut" option can hide or display annotated line segments in the corresponding directions, also helping to reduce interference. 
+This makes it easier to determine the correct direction of the signal. Additionally, the scroll bars for X/Y/Z directions under the "Surface Cut" option can hide or display annotated line segments in the corresponding directions, also helping to reduce interference. 
 
-When encountering situations where the neuron signal is intertwined with other signals and is difficult to determine, you can adjust the "Z-thick" option to stretch along the Z-axis direction. If using the above options still makes it difficult to judge the correct direction of the neuron
+When encountering situations where the neuron signal is intertwined with other signals and it is difficult to determine, you can adjust the "Z-thick" option to stretch along the Z-axis direction. If using the above options still makes it difficult to determine the correct direction of the neuron
 
 During the annotation process, simply move the cursor to the desired location and press the `Q` key to quickly place a marker there.
 
@@ -136,13 +136,13 @@ Several shortcuts are provided to facilitate annotation:
 4. Click the `app2Convenient` button to initiate the tracking process. The results will appear in a few minutes, please be patient.
 
 
-# Management Data
+# Data Management
 
 ### Upload annotated files
 
 
 <details>
-<summary>Screenshots for upload annotated files</summary>
+<summary>Screenshots for uploading annotated files</summary>
 
 ![ws_dbms_01](../assets/ws_dbms_01.png)
     
