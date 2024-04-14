@@ -6,7 +6,7 @@ CAR-WS is built upon the Vaa3D system, incorporating a cloud server and enabling
 
 # Installation
 
-The workstation client and the VR client share the same software. For Windows system user, please download and unzip the releases and click on `vaa3d_CAR.exe` to run the software. The whole installation will cost 1-2 minutes.  If you would like to build the system from teh source code, you are encouraged to contact the developers directly as the entire system involves a lot of components and potential optimization of the software-building configuration.
+The workstation client and the VR client share the same software. For Windows system user, please download and unzip the releases and click on `vaa3d_CAR.exe` to run the software. The whole installation will cost 1-2 minutes.  If you would like to build the system from the source code, you are encouraged to contact the developers directly as the entire system involves a lot of components and potential optimization of the software-building configuration.
 </details>
 
 
