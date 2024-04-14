@@ -77,10 +77,6 @@ The workstation client and the VR client share the same software. For Windows sy
 
 During the annotation process, you can understand the current resolution of the image by viewing the "Resolution" option on the panel while toggling the resolution with a double-click of the mouse or scrolling the mouse wheel upwards.
 
-After annotating the neural signal in the current image, you can click the left and right arrows for x/y/z under "Volume Of Interest (VOI)'s coordinates" to translate the image block along the X/Y/Z directions in the coordinate system (the colors of the arrows correspond to the colors of the coordinate system), allowing continued annotation of this neuron in a new image block.
-
-In the annotation process, the "Contrast" option is typically used to adjust the contrast between the signal and the background, aiding in identifying weak signals.
-
 If other signals interfere significantly with this neuron signal, you can reduce interference by adjusting the scroll bars for X-cut / Y-cut / Z-cut under the "Volume Cut" option to hide portions of the image block along the X/Y/Z directions in the coordinate system.
 
 This makes it easier to determine the correct direction of the signal. Additionally, the scroll bars for X/Y/Z directions under the "Surface Cut" option can hide or display annotated line segments in the corresponding directions, also helping to reduce interference. 
