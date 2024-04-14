@@ -1,7 +1,7 @@
 # CAR-WS
 
 
-CAR-WS is built upon the Vaa3D system, incorporating a cloud server and enabling collaborative capabilities. It also incorporates several features from [Vaa3D](http://www.vaa3d.org/). Please refer the [User Manual](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/UserManual.wiki) for details.
+CAR-WS is built upon the Vaa3D system, incorporating a cloud server and enabling collaborative capabilities. It also incorporates several features from [Vaa3D](http://github.com/Vaa3D/). Please refer the [User Manual](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/UserManual.wiki) for details.
 
 
 # Installation
