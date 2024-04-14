@@ -2,13 +2,13 @@
 
 ## Installation
 
-CAR-VR and CAR-WS have the same installation steps since they share the same software. Please refer to [CAR-WS#Installation](./2-CAR-WS.md#Installation)
+CAR-VR and CAR-WS have the same installation steps since they share the same software. Please refer to [CAR-WS](./2-CAR-WS.md) instructions.
 
 ## Step-by-Step Guide
 
 ### Entering and exiting CAR-VR
 
-First, the user needs to start Vaa3D software, load an image volume, a surface object, or a whole-brain data, power on the Vive device, and also launch the Steam VR software. Next, CAR-VR can be launched from a CAR-WS viewer of Vaa3D by clicking the "See in VR" button, as shown below. After that, the user can put on the VR headset to start using CAR-VR, and all the contents previously in the 3-D viewer are now observable in CAR-VR. In addition, a companion window that shows the replicated view in the headset is displayed on computer monitor, in order for other users to know what is currently being seen in VR.
+First, the user needs to start the Vaa3D software, load an image volume, a surface object, or whole-brain data, power on the Vive device, and also launch the Steam VR software. Next, CAR-VR can be launched from a CAR-WS viewer of Vaa3D by clicking the "See in VR" button, as shown below. After that, the user can put on the VR headset to start using CAR-VR, and all the contents previously in the 3-D viewer are now observable in CAR-VR. Additionally, a companion window that replicates the view in the headset is displayed on the computer monitor, allowing other users to see what is currently being viewed in VR.
 
 ![Entering CAR-VR](../assets/vr_entering.png)
 
