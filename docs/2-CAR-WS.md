@@ -6,16 +6,7 @@ CAR-WS is built upon the Vaa3D system, incorporating a cloud server and enabling
 
 # Installation
 
-The workstation client and the VR client share the same software. For Windows system user, please download and unzip the releases and click on `vaa3d_CAR.exe` to run the software. The whole installation will cost 1-2 minutes.  For users of other systems, please build CAR-VR-WS from scratch.
-
-<details>
-<summary>Build CAR-WS-VR from scratch</summary>
-
-CAR-WS and CAR-VR clients share the same codebase based on Qt 4.7.3. You can refer to the following tutorials to compile.
-
-- [On Linux](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/Build-Vaa3D-on-Linux): Build CAR-VR-WS with C++ and QMake.
-- [On Windows](https://github.com/Vaa3D/Vaa3D_Wiki/wiki/Build-Vaa3D-on-Windows-(QMake)): Build CAR-VR-WS with MSVC and QMake.
-
+The workstation client and the VR client share the same software. For Windows system user, please download and unzip the releases and click on `vaa3d_CAR.exe` to run the software. The whole installation will cost 1-2 minutes.  If you would like to build the system from teh source code, you are encouraged to contact the developers directly as the entire system involves a lot of components and potential optimization of the software-building configuration.
 </details>
 
 
