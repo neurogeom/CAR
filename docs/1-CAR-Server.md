@@ -37,13 +37,13 @@ After the download is complete, copy the images to the prepared Linux OS compute
 docker import <ImageName> <CustomContainerName>
 ```
 
-Use the same name of image file to assign the name of conatainer is recommended. Eg. If the image file name is `redis_v1.0.tar`, the container name should be `redis`.
+Use the same name of image file to assign the name of container is recommended. For example, if the image file name is `redis_v1.0.tar`, the container name should be `redis`.
 
-After the import is complete, use the `docker images` command to view all imported image information.
+After the import is complete, use the `docker images` command to view all imported- image information.
 
 ### Create Network
 
-This step is to create a network connecting all service containers. Use the following command to create a docker network:
+This step creates a network that connects all service containers. Use the following command to create a docker network:
 
 ```sh
 docker network create --driver bridge --subnet=172.18.0.0/16 --gateway=172.18.0.1 braintell
@@ -90,9 +90,9 @@ docker run -d --name nginx \
 
 #### Start DBMS Service
 
-First, download the `DBMS.zip` from the link above, copy it to your Linux server and unzip it.
+First, download the `DBMS.zip` file from the link above, copy it to your Linux server and unzip it.
 
-After importing the DBMS image (including a swcdbms container and a mongodb container), run the deploy script to auto deploy the DBMS container:
+After importing the DBMS image (including a swcdbms container and a MongoDB  container), run the deployment script to auto deploy the DBMS container:
 
 ```sh
 cd <your file decompression directory>
@@ -100,7 +100,7 @@ cd <your file decompression directory>
 ```
 
 #### Start AI Module
-Use the following command to start the superuser container:
+To start the superuser container, use the following command:
 
 ```sh
 docker run -itd --name superuser \
@@ -111,7 +111,7 @@ docker run -itd --name superuser \
 superuser:v3.0 /bin/bash
 ```
 
-The `application.yaml` part is as follows: 114.117.165.134 is replaced with the your linux server IP, savePathForPredict can be customized according to your requirements. As for the username and password parts, you can use any user and password in the dbms.
+The `application.yaml` section is as follows: 114.117.165.134 is replaced with the your linux server IP, savePathForPredict can be customized according to your requirements. As for the username and password parts, you can use any user and password in the dbms.
 
 
 ```yaml
@@ -141,7 +141,7 @@ cd /home/SuperUser/SuperUserServer
 nohup java -jar SuperUserServer.jar --spring.config.location=file:./application.yaml &.
 ```
 
-The next step is to start Terminal Point Verifier model server. Use the following command to start the container first:
+Next,start Terminal Point Verifier model server. Use the following command to start the container first:
 ```sh
 docker run -itd --name mybreakpoint_model \
 -v <savePathForPredict in application.yaml>:<savePathForPredict in application.yaml> \
@@ -165,7 +165,7 @@ nohup python -m cog.server.http &.
 
 #### Start Core Module
 
-First, copy the `nginx.conf` file and `config.json` to your Linux server. The config files mentioned above are provided in the release page of this repository.
+First, copy the `nginx.conf` file and `config.json` file to your Linux server. The config files mentioned above are provided in the release page of this repository.
 
 After importing the WebServer image, use the following command to start the WebServer container:
 
@@ -232,7 +232,7 @@ The contents of the config file are as follows, the parameters mentioned above a
 ```
 
 ### Upload Your Own Data
-The CAR-Server supports you to upload your own image data in Terafly format for subsequent collaborative reconstruction and other operations.
+The CAR-Server supports you in uploading your own image data in Terafly format for subsequent collaborative reconstruction and other operations.
 
 The first step is to copy the image to the folder created in the [Preparation](#preparation) step.
 
