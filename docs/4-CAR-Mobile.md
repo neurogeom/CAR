@@ -1,9 +1,9 @@
 
 ## CAR Mobile
 
-CAR-Mobile (Hi5) is a tool developed on Android system to allow visualization and assisted analysis of multi-dimensional image. The tool has been implemented in Java with OpenGL.
+CAR-Mobile (Hi5) is a tool developed for the Android system to allow visualization and assisted analysis of multi-dimensional images. The tool has been implemented in Java with OpenGL.
 
-This supplement describes common use cases for Hi5 and the Hi5 software itself (installation, user interface, available functionalities, etc.). Since Hi5 is in ongoing development, this supplement might not include the most recent updates, or it could be based on a slightly different naming of the various functionalities available.
+This supplement describes common use cases for Hi5 and the Hi5 software itself, including installation, user interface, and available functionalities. Since Hi5 is under ongoing development, this supplement may not include the most recent updates, or it could reflect slightly different names for the various functionalities available.
 
 ### Installation
 
