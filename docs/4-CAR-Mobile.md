@@ -7,7 +7,7 @@ This supplement describes common use cases for Hi5 and the Hi5 software itself, 
 
 ### Installation
 
-Download the binary release, install it on your Android phone and it's ready to go.
+Currently we provide only the binary for Android phones. Download the binary release, install it on your Android phone and it's ready to go. If you need iPhone version, you are encouraged to contact the developers to get an alpha version for testing.
 
 ### Step-by-Step Guide
 
