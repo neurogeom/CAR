@@ -53,7 +53,7 @@ The workstation client and the VR client share the same software. For Windows sy
 
 ### Open image and load annotations
 
-1. Click `File` - `Open TeraFly Image(3-5D)` and choose an terafly format image.
+1. Click `File` -> Open `TeraFly Image(3-5D)` and find a terafly format image, then select the directory starting with "RES_".
 2. Click `Collaborate` - `Load Reconstruction From Server` and then choose an annotation file (usually containing soma coordinates).
 3. Choose any of them and click on `LoadAno` to enter collaboration mode.
 4. A message window will pop up stating "Connect success! Ready to start collaborating". Click `OK` you can collaborate with others. Users can collaborate in one room each other by choose the same annotation file.
@@ -90,7 +90,7 @@ Several shortcuts are provided to facilitate annotation:
 | Shortcut          | Action                                                                |
 | ----------------- | --------------------------------------------------------------------- |
 | `Q`               | Define a marker.                                                      |
-| `S`               | Toggle show/hide the line segment                                     |
+| `S`               | Toggle show/hide the line segment.                                    |
 | `Alt`-`B`         | **B**Boxes Mode: Draw curves using serial bounding boxes.             |
 | `Alt`-`C`         | **C**onnection Mode: Connect multiple neuron segments.                |
 | `Alt`-`D`         | **D**eleting Mode: Delete multiple neuron segments.                   |
@@ -122,7 +122,7 @@ Several shortcuts are provided to facilitate annotation:
 </details>
 
 
-# Data Management
+## Data Management
 
 ### Upload annotated files
 
