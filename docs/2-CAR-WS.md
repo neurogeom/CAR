@@ -36,16 +36,16 @@ The workstation client and the VR client share the same software. For Windows sy
   - Logout from the software.
 
 <details open>
-<summary>Screenshots for configuration and authorization</summary>
+<summary>Screenshots for the login and register interfaces</summary>
 
 <img src="../assets/ws_login.png" alt="The CAR-WS login" width=500/>
 
-**Figure 1**. The interface for login CAR-WS.
+**Figure 1**. The interface for logging into CAR-WS.
 
 
 <img src="../assets/ws_register.png" alt="The CAR-WS register" width=500/>
 
-**Figure 2**. The interface for register CAR-WS.
+**Figure 2**. The interface for registering CAR-WS.
 
 
 <img src="../assets/ws_lobby_interface.png" alt="The CAR-WS lobby interface" width=500/>
