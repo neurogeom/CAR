@@ -22,11 +22,11 @@ To use CAR_Mobile, you will need to register or sign in if you already have an a
 5. If you don’t have an account and would like to register a new one, click on the “Register” button. This action will direct you to the register interface where you can create a new account.
 6. If you prefer to explore the software as a guest without registering, you can click on the “Direct Access” button. However, please note that some functions may be limited in the guest mode.
 
-<img src="../assets/mobile_login.png" alt="Login CAR_Mobile" style="max-width:150px">
+<img src="../assets/mobile_login.png" alt="Login CAR_Mobile" width=500/>
 
 The user interface of login activity.
 
-<img src="../assets/mobile_register.png" alt="Register CAR_Mobile" style="max-width:140px">
+<img src="../assets/mobile_register.png" alt="Register CAR_Mobile" width=500/>
 
 The register interface. Users need to enter various information for the new account. The input fields with a red star must be filled in. Password need to be entered twice to confirm. If the username does not already exist, a new account will be created.
 
@@ -77,7 +77,7 @@ The expanded bottom menu.
 1. the button to change curve color;
 2. the button to change marker color. 
 
-<img src="../assets/mobile_resolutions.png" alt="Multi-resolutions" style="max-width:150px">
+<img src="../assets/mobile_resolutions.png" alt="Multi-resolutions" width=500/>
 
 All operations that move an image block will download a new image block with the corresponding coordinates at the same resolution. When switching resolutions with this list, a different resolution image block is downloaded with the same center position. After clicking (4), circle the area of interest and it will zoom in to higher resolution with this area in the center of new block. 
 
@@ -85,7 +85,7 @@ All operations that move an image block will download a new image block with the
 
 If you wish to utilize other collaborative functionalities, such as soma annotation and Bouton data inspection, you can access these through the Collaboration Mode settings. Clicking on the settings icon will prompt a dialog box as shown in the following image. From there, you can select to enter either the 'Soma Pinpointing' mode or the 'Synapse Validation' mode.
 
-<img src="../assets/switchInterface.png" alt="switchInterface" style="max-width:300px">
+<img src="../assets/switchInterface.png" alt="switchInterface" width=500/>
 
 ### Soma-pinpointing
 
