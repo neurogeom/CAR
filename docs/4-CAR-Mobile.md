@@ -1,17 +1,17 @@
 
-## CAR Mobile
+# CAR Mobile
 
 CAR-Mobileis a tool developed for the Android system to allow visualization and assisted analysis of multi-dimensional images. The tool has been implemented in Java with OpenGL.
 
 This supplement describes common use cases for CAR and the CAR software itself, including installation, user interface, and available functionalities. Since CAR is under ongoing development, this supplement may not include the most recent updates, or it could reflect slightly different names for the various functionalities available.
 
-### Installation
+# Installation
 
 Currently we provide only the binary for Android phones. Download the binary release, install it on your Android phone and it's ready to go. If you need iPhone version, you are encouraged to contact the developers to get an alpha version for testing.
 
-### Step-by-Step Guide
+# Step-by-Step Guide
 
-#### Register and Login
+## Register and Login
 
 To use CAR_Mobile, you will need to register or sign in if you already have an account. The process is as follows:
 
@@ -19,9 +19,8 @@ To use CAR_Mobile, you will need to register or sign in if you already have an a
 2. In the login interface, you will find an input box for entering your account and password.
 3. Enter your account and password into the respective input boxes.
 4. Next, click on the “Sign In” button to proceed with the login process.
-5. If the account exists and the password is correct, the software will automatically navigate to the next interface.
-6. Alternatively, if you don’t have an account and would like to register a new one, click on the “Register” button. This action will direct you to the register interface where you can create a new account.
-7. If you prefer to explore the software as a guest without registering, you can click on the “Direct Access” button. However, please note that some functions may be limited in the guest mode.
+5. If you don’t have an account and would like to register a new one, click on the “Register” button. This action will direct you to the register interface where you can create a new account.
+6. If you prefer to explore the software as a guest without registering, you can click on the “Direct Access” button. However, please note that some functions may be limited in the guest mode.
 
 <img src="../assets/mobile_login.png" alt="Login CAR" style="max-width:150px">
 
@@ -34,21 +33,20 @@ The user interface of login activity, which has a number of components:
 5. Direct access button. 
 6. forget password button.
 
-<img src="../assets/mobile_register.png" alt="Register CAR" style="max-width:150px">
+<img src="../assets/mobile_register.png" alt="Register CAR" style="max-width:140px">
 
 The register interface. Users need to enter various information for the new account. The input fields with a red star must be filled in. Password need to be entered twice to confirm. If the username does not already exist, a new account will be created.
 
 
-#### Collaboration
+## Collaboration
 
-In collaboration mode, you can visualize the mouse brain by switching between different resolutions of brain images. Additionally, you can move the images along the X-axis, Y-axis, and Z-axis for a comprehensive view. Furthermore, you can collaborate with different users and work on different clients, such as CAR-Workstations and CAR-VR, by entering the same collaborating room and selecting the same anomaly (.ano) file (An morphometry file format defined in Vaa3D, including SWC file information and Apo file information). 
+Upon logging in, you'll seamlessly enter Collaboration Mode. Within this mode, you can explore the mouse brain by toggling between various resolutions of brain images. Additionally, you have the flexibility to navigate the images along the X-axis, Y-axis, and Z-axis to gain a comprehensive perspective. Furthermore, Collaboration Mode allows you to engage with other users and collaborate across different client platforms, such as CAR-Workstations and CAR-VR. Simply enter the same collaboration room and select the identical anomaly (.ano) file—a morphometry file format defined in Vaa3D, encompassing SWC file information and Apo file information—to begin collaborative efforts
 
 ![Collaboration UI](../assets/mobile_collaboration_ui.png)
 
-To enter the Collaboration Mode, please follow the instructions below:
+Please follow the instructions below to use collaboration mode:
 
-1. Navigate to the Collaboration Mode interface, as depicted in Fig. 1.3.
-2. Within the Collaboration Mode interface, locate and click on the “Open File” button.
+1. Within the Collaboration Mode interface, locate and click on the “Open File” button.
 3. This action will trigger a dialog box named “File Open” to appear.
 4. In the “File Open” dialog box, select the option “Open BigData”.
 5. Another dialog box named “Ano Number” will appear, in the “Ano Number” dialog box, choose the specific anomaly (.ano) you want to reconstruct.
@@ -56,27 +54,47 @@ To enter the Collaboration Mode, please follow the instructions below:
 
 ![Collaboration Functions](../assets/mobile_collaboration_functions.png)
 
-The user interface of annotation activity when open big data image which has a number of components (1-7) different from local file mode. (2-3,5,7-9) are the buttons to move the image block up, left, right, down, forward and backward. (6) are the button to show the resolution list to switch. (4) is the button to zoom in to higher resolution by circling the area of interest. 
+Buttons (3-4, 6-7, 10-11) to move the image block:
+These buttons allow users to move the image block in different directions: up, left, right, down, forward, and backward.
+Button (8) to show the resolution list:
+This button displays the resolution list, allowing users to switch between different resolutions.
+Button (5) to zoom in:
+Users can zoom in to a higher resolution by circling the area of interest using this button.
+Button (9) to show the online collaboration list:
+This button reveals the list of users currently collaborating online.
+Additionally, whenever there is a new user entering or exiting the collaboration session, a toast message will appear to notify users.
 
 ![Collaboration Menu](../assets/mobile_collaboration_menu.png)
 
-The expanded bottom menu. (1) is the button to draw curve. (2) is the button to pinpoint. (3) is the button to split line. (4) is the button to fold up menu. (5) is the button to erase curves. (6) is the button to delete marker. (7) is the button to expand the menu for more annotation methods.
+The expanded bottom menu.
+(1) is the button to draw curve. 
+(2) is the button to pinpoint. 
+(3) is the button to split line. 
+(4) is the button to fold up menu. 
+(5) is the button to erase curves. 
+(6) is the button to delete marker. 
+(7) is the button to expand the menu for more annotation methods.
 
 All operations can be activated by pressing once, and the pressing again will exit the current operation. For example, press the draw curve button once, and users can draw curves by swiping finger across the screen. Press again to quit. All operations described below need to be performed after activating the corresponding mode. Pinpoint means to click the desired position to generate a marker in the corresponding area. Delete curves by swiping finger to intersect with the target ones. Click the target marker to delete it. Selecting the curve and marker to change the color is similar to the delete operation. Split means to split a curve into two by swiping to intersect the curve at the point you want to split. 
 
-<img src="../assets/mobile_collaboration_expanded_menu.png" alt="Collaboration Expanded Menu" style="max-width:300px">
+<img src="../assets/mobile_collaboration_expanded_menu.png" alt="Collaboration Expanded Menu" style="max-width:150px">
 
 The expanded bottom menu.
 
 1. the button to change curve color;
 2. the button to change marker color. 
 
-<img src="../assets/mobile_resolutions.png" alt="Multi-resolutions" style="max-width:300px">
+<img src="../assets/mobile_resolutions.png" alt="Multi-resolutions" style="max-width:150px">
 
 All operations that move an image block will download a new image block with the corresponding coordinates at the same resolution. When switching resolutions with this list, a different resolution image block is downloaded with the same center position. After clicking (4), circle the area of interest and it will zoom in to higher resolution with this area in the center of new block. 
 
+## Other Collaborations
 
-#### Soma-pinpointing
+If you wish to utilize other collaborative functionalities, such as soma annotation and Bouton data inspection, you can access these through the Collaboration Mode settings. Clicking on the settings icon will prompt a dialog box as shown in the following image. From there, you can select to enter either the 'Soma Pinpointing' mode or the 'Synapse Validation' mode.
+
+<img src="../assets/switchInterface.png" alt="switchInterface" style="max-width:150px">
+
+### Soma-pinpointing
 
 ![CAR Soma-pinpointing UI](../assets/mobile_soma_pinpointing_ui.png)
 
@@ -122,7 +140,7 @@ There three types of file in marker factory mode:
 3. the file doesn’t contain any unannotated soma. Press :white_check_mark: to label current file as a checked file.
 Once users do any of above operations, current file will be labeled as checked file on the server and will not be delivered to any user. Otherwise, user may load the same file again in the future.
 
-#### Synapse Validation
+### Synapse Validation
 
 ![Synapse Validation UI](../assets/mobile_synapse_validation.png)
 
