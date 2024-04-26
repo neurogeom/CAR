@@ -24,14 +24,7 @@ To use CAR_Mobile, you will need to register or sign in if you already have an a
 
 <img src="../assets/mobile_login.png" alt="Login CAR" style="max-width:150px">
 
-The user interface of login activity, which has a number of components:
-
-1. Username input box.
-2. Password input box.
-3. Sign in button.
-4. Register button.
-5. Direct access button. 
-6. forget password button.
+The user interface of login activity.
 
 <img src="../assets/mobile_register.png" alt="Register CAR" style="max-width:140px">
 
@@ -92,7 +85,7 @@ All operations that move an image block will download a new image block with the
 
 If you wish to utilize other collaborative functionalities, such as soma annotation and Bouton data inspection, you can access these through the Collaboration Mode settings. Clicking on the settings icon will prompt a dialog box as shown in the following image. From there, you can select to enter either the 'Soma Pinpointing' mode or the 'Synapse Validation' mode.
 
-<img src="../assets/switchInterface.png" alt="switchInterface" style="max-width:150px">
+<img src="../assets/switchInterface.png" alt="switchInterface" style="max-width:300px">
 
 ### Soma-pinpointing
 
@@ -100,15 +93,15 @@ If you wish to utilize other collaborative functionalities, such as soma annotat
 
 UI of Soma pinpointing.
 
-1. **Back**: back to home page.
-2. **Score**: user’s operation score
-3. **Viewport**: visualize and interact with image block:
-    - **Rotation**: use one/two (two fingers move in parallel) finger(s) swap across the screen and image block rotate towards desired direction on default mode/annotation mode.
-    - **Zoom**: use two fingers zoom in/out, the scale of image will go with distance between two fingers.
-    - **Annotation**: annotate on image in certain annotation mode.
-4. **Open file**: open a new file and the preloading will start, eight files will be cached.
-5. **Settings**: settings panel have six items, five of them are introduced above.
-6. **Auto upload**: switch of auto upload, annotations will be uploaded when change to another image if the switch is on.
+1. Back: back to home page.
+2. Score: user’s operation score
+3. Viewport: visualize and interact with image block:
+    - Rotation: use one/two (two fingers move in parallel) finger(s) swap across the screen and image block rotate towards desired direction on default mode/annotation mode.
+    - Zoom: use two fingers zoom in/out, the scale of image will go with distance between two fingers.
+    - Annotation: annotate on image in certain annotation mode.
+4. Open file: open a new file and the preloading will start, eight files will be cached.
+5. Settings: settings panel have six items, five of them are introduced above.
+6. Auto upload: switch of auto upload, annotations will be uploaded when change to another image if the switch is on.
 
 ![Mobile Image UI](../assets/mobile_image_ui.png)
 
@@ -133,9 +126,7 @@ There three types of file in marker factory mode:
 1. the file with unannotated soma.
     When users finish their annotation, they can submit them in two ways:
     - Submit them manually by press icon.
-    - Submit them automatically (by open auto upload option mentioned in 1.4.1) when switching file.
-    
-    All the adding and deleting operations will be applied.
+    - Submit them automatically (by open auto upload option in settings options) when switching file.
 2. the file doesn’t contain any soma. Press :wastebasket: to label current file as a boring file and only deleting operations will be applied.
 3. the file doesn’t contain any unannotated soma. Press :white_check_mark: to label current file as a checked file.
 Once users do any of above operations, current file will be labeled as checked file on the server and will not be delivered to any user. Otherwise, user may load the same file again in the future.
