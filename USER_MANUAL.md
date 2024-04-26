@@ -2,7 +2,7 @@
 
 The sections below describe CAR's basic and advanced features on multiple clients.
 
-To invoke CAR, users just need to download the released CAR client software from (https://github.com/neurogeom/CAR/releases/tag/v1.2.0). We have provided two test accounts and test image data in the CAR-WS user manual. Information including server IP and port details has been integrated directly into the CAR client software.
+To invoke CAR, users just need to download the released CAR client software from (https://github.com/neurogeom/CAR/releases/tag/v1.3.0). We have provided two test accounts and test image data in the CAR-WS user manual. Information including server IP and port details has been integrated directly into the CAR client software.
 
 1. [CAR-Server](./docs/1-CAR-Server.md)
 2. [CAR-WS](./docs/2-CAR-WS.md)
