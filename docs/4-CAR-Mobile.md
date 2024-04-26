@@ -22,11 +22,11 @@ To use CAR_Mobile, you will need to register or sign in if you already have an a
 5. If you don’t have an account and would like to register a new one, click on the “Register” button. This action will direct you to the register interface where you can create a new account.
 6. If you prefer to explore the software as a guest without registering, you can click on the “Direct Access” button. However, please note that some functions may be limited in the guest mode.
 
-<img src="../assets/mobile_login.png" alt="Login CAR" style="max-width:150px">
+<img src="../assets/mobile_login.png" alt="Login CAR_Mobile" style="max-width:150px">
 
 The user interface of login activity.
 
-<img src="../assets/mobile_register.png" alt="Register CAR" style="max-width:140px">
+<img src="../assets/mobile_register.png" alt="Register CAR_Mobile" style="max-width:140px">
 
 The register interface. Users need to enter various information for the new account. The input fields with a red star must be filled in. Password need to be entered twice to confirm. If the username does not already exist, a new account will be created.
 
