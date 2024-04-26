@@ -70,7 +70,7 @@ The expanded bottom menu.
 
 All operations can be activated by pressing once, and the pressing again will exit the current operation. For example, press the draw curve button once, and users can draw curves by swiping finger across the screen. Press again to quit. All operations described below need to be performed after activating the corresponding mode. Pinpoint means to click the desired position to generate a marker in the corresponding area. Delete curves by swiping finger to intersect with the target ones. Click the target marker to delete it. Selecting the curve and marker to change the color is similar to the delete operation. Split means to split a curve into two by swiping to intersect the curve at the point you want to split. 
 
-<img src="../assets/mobile_collaboration_expanded_menu.png" alt="Collaboration Expanded Menu" style="max-width:150px">
+<img src="../assets/mobile_collaboration_expanded_menu.png" alt="Collaboration Expanded Menu" width=500/>
 
 The expanded bottom menu.
 
