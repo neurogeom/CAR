@@ -6,11 +6,11 @@ CAR-WS is built upon the Vaa3D system, incorporating a cloud server and enabling
 
 # Installation
 
-The workstation client and the VR client share the same software. For Windows system user, please download and unzip the releases and click on `vaa3d_CAR.exe` to run the software. The whole installation will cost 1-2 minutes.  If you would like to build the system from the source code, you are encouraged to contact the developers directly as the entire system involves a lot of components and potential optimization of the software-building configuration.
+The workstation client and the VR client share the same software. For Windows system user, please download and unzip the releases and click on `CAR_WS_VR.exe` to run the software. The whole installation will cost 1-2 minutes.  If you would like to build the system from the source code, you are encouraged to contact the developers directly as the entire system involves a lot of components and potential optimization of the software-building configuration.
 </details>
 
 
-# Configuration and authorization
+# Login and Register
 
 > [!TIP]
 >
@@ -25,27 +25,32 @@ The workstation client and the VR client share the same software. For Windows sy
 > - A human brain neuron: `00029_P001_T01-S001_MFG_R0460_WY-20220415_GYC_03`.
 > - A mouse brain neuron: `18454-00019`.
 
-1. Click `Advanced` - `Big-Image-Data` - `CAR-WS` to open the panel.
-2. Configuration before using.
-    1. Click `Collaborate` - `Config`.
-    2. A dialog will appear prompting for a username and password. Log in to CAR by entering the username and password.
+1. When you double-click on `CAR_WS_VR.exe`, you will be taken to the CAR startup interface. A dialog will appear prompting for a username and password. Log in to CAR by entering your username and password. Click the `register` button to sign up as a new user.
+
+2. Upon launching the CAR software, you will enter the lobby interface. Here, you'll find two buttons:
+
+- `Real-time Collaboration`: This button directs you to the annotation system.
+- `Data Management Client`: This button leads you to the data management system.
+- Clicking on the avatar icon reveals a dropdown menu, allowing you to:
+  -  Edit your avatar.
+  - Logout from the software.
 
 <details open>
 <summary>Screenshots for configuration and authorization</summary>
 
-<img src="../assets/ws_entering.png" alt="The CAR-WS entry" width=500/>
+<img src="../assets/ws_login.png" alt="The CAR-WS login" width=500/>
 
-**Figure 1**. The entry for CAR-WS.
-
-
-<img src="../assets/ws_config.png" alt="The CAR-WS configuration" width=300/>
-
-**Figure 2**. The interface for config CAR-WS.
+**Figure 1**. The interface for login CAR-WS.
 
 
-<img src="../assets/ws_auth.png" alt="The CAR-WS authorization" width=300/>
+<img src="../assets/ws_register.png" alt="The CAR-WS register" width=300/>
 
-**Figure 3**. The interface for authenticating CAR-WS.
+**Figure 2**. The interface for register CAR-WS.
+
+
+<img src="../assets/ws_lobby_interface.png" alt="The CAR-WS lobby interface" width=300/>
+
+**Figure 3**. The lobby interface of CAR-WS.
 </details>
 
 
@@ -126,7 +131,7 @@ Several shortcuts are provided to facilitate annotation:
 
 ### Upload annotated files
 
-1. Click `Collaborate` - `Data Management Client` and invoke the data management system.
+1. Click `Data Management Client` in the lobby interface and invoke the data management system.
 2. Log into the data management system.
 3. Upload your annotated files.
     1. Select the `Swc` option from column, right-click  on the interface, and click on the `Import Swc File` button.
