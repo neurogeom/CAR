@@ -43,12 +43,12 @@ The workstation client and the VR client share the same software. For Windows sy
 **Figure 1**. The interface for login CAR-WS.
 
 
-<img src="../assets/ws_register.png" alt="The CAR-WS register" width=300/>
+<img src="../assets/ws_register.png" alt="The CAR-WS register" width=500/>
 
 **Figure 2**. The interface for register CAR-WS.
 
 
-<img src="../assets/ws_lobby_interface.png" alt="The CAR-WS lobby interface" width=300/>
+<img src="../assets/ws_lobby_interface.png" alt="The CAR-WS lobby interface" width=500/>
 
 **Figure 3**. The lobby interface of CAR-WS.
 </details>
@@ -141,7 +141,7 @@ Several shortcuts are provided to facilitate annotation:
 <details open>
 <summary>Screenshots for uploading annotated files</summary>
 
-<img src="../assets/ws_dbms_01.png" alt="The entry for data managment client" width=300/>
+<img src="../assets/ws_dbms_01.png" alt="The entry for data managment client" width=500/>
     
 **Figure 8**. The entry for data managment client.
 
