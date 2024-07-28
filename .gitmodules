@@ -4,6 +4,7 @@
 [submodule "CAR-Mobile"]
 	path = CAR-Mobile
 	url = https://github.com/Hi5App/C3.git
+	branch = "new_zll"
 [submodule "CAR-Server"]
 	path = CAR-Server
 	url = https://github.com/Hi5App/BrainTellServer.git
