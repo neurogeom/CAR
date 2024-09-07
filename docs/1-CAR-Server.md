@@ -116,11 +116,11 @@ The `application.yaml` section is as follows: 114.117.165.134 is replaced with t
 
 ```yaml
 globalconfig:
-  urlForGetBBImage: "http://114.117.165.134:26000/dynamic/image/cropimage"
-  urlForGetBBSwc: "http://114.117.165.134:26000/dynamic/swc/cropswc"
-  urlForGetImageList: "http://114.117.165.134:26000/dynamic/image/getimagelist"
-  urlForBranchingModel: "http://114.117.165.134:26013/predictions"
-  urlForMissingModel: "http://114.117.165.134:26003/predictions"
+  urlForGetBBImage: "http://braintellserver20240331:8001/release/image/cropimage"
+  urlForGetBBSwc: "http://braintellserver20240331:8001/release/swc/cropswc"
+  urlForGetImageList: "http://braintellserver20240331:8001/release/image/getimagelist"
+  urlForBranchingModel: "http://mybanchingpoint_model:5000/predictions"
+  urlForMissingModel: "http://mybreakpoint_model:5000/predictions"
   mainPath: "/home/BraintellServer"
   cropImageBin: "${globalconfig.mainPath}/vaa3d/cropimage"
   dataPath: "${globalconfig.mainPath}/data"
